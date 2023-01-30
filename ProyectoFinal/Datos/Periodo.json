@@ -1,0 +1,59 @@
+{
+  "cabecera": {
+    "dato": {
+      "idPeriodo": 1.0,
+      "mesInicio": "MAYO",
+      "mesFin": "ENERO",
+      "especificacion": "TRIMESTRE"
+    },
+    "siguiente": {
+      "dato": {
+        "idPeriodo": 2.0,
+        "mesInicio": "FEBRERO",
+        "mesFin": "AGOSTO",
+        "especificacion": "BIMESTRE"
+      },
+      "siguiente": {
+        "dato": {
+          "idPeriodo": 3.0,
+          "mesInicio": "ENERO",
+          "mesFin": "AGOSTO",
+          "especificacion": "CUATRIMESTRE"
+        },
+        "siguiente": {
+          "dato": {
+            "idPeriodo": 4.0,
+            "mesInicio": "ENERO",
+            "mesFin": "NOVIEMBRE",
+            "especificacion": "BIMESTRE"
+          },
+          "siguiente": {
+            "dato": {
+              "idPeriodo": 5.0,
+              "mesInicio": "ABRIL",
+              "mesFin": "AGOSTO",
+              "especificacion": "SEMESTRE"
+            },
+            "siguiente": {
+              "dato": {
+                "idPeriodo": 6.0,
+                "mesInicio": "MAYO",
+                "mesFin": "ENERO",
+                "especificacion": "CUATRIMESTRE"
+              },
+              "siguiente": {
+                "dato": {
+                  "idPeriodo": 7,
+                  "mesInicio": "FEBRERO",
+                  "mesFin": "SEPTIEMBRE",
+                  "especificacion": "BIMESTRE"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tamanio": 7
+}

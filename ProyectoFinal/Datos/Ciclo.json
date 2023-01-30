@@ -1,0 +1,12 @@
+{
+  "cabecera": {
+    "dato": {
+      "id": 1,
+      "nombre": "Ciclo 1",
+      "asignaturas": {
+        "tamanio": 0
+      }
+    }
+  },
+  "tamanio": 1
+}

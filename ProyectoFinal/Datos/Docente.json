@@ -1,0 +1,20 @@
+{
+  "cabecera": {
+    "dato": {
+      "idDocente": 1,
+      "tituloTercerNivel": "Ingenieria",
+      "tituloCuartoNivel": "Doctorado",
+      "aniosExpDocente": 4,
+      "aniosExpLaboral": 5,
+      "nombres": "Juan Rafael",
+      "apellidos": "Torres Guillen",
+      "identificacion": "1120789632",
+      "direccion": "Avn. Huaynacapa y Los Naranjos",
+      "telefono": "0998563789",
+      "ciudad": "Cuenca",
+      "fechaNacimiento": "01/01/1990",
+      "genero": "MASCULINO"
+    }
+  },
+  "tamanio": 1
+}
