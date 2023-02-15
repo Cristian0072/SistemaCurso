@@ -7,11 +7,12 @@ import controlador.listas.ListaEnlazada;
  * @author SONY VAIO
  */
 public class Malla {
+
     private Integer id;
     private ListaEnlazada<Carrera> carreras;
     private String regimen;
-    
-    public Malla(){
+
+    public Malla() {
     }
 
     public Integer getId() {
@@ -37,7 +38,10 @@ public class Malla {
     public void setRegimen(String regimen) {
         this.regimen = regimen;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Id " + id + " carreras " + carreras.toString() + " regimen " + regimen;
+    }
+
 }

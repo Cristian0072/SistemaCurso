@@ -35,7 +35,7 @@ public class ModeloTablaAsignatura extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 10;
+        return 6;
     }
 
     @Override
@@ -53,8 +53,6 @@ public class ModeloTablaAsignatura extends AbstractTableModel {
                 return "Paralelo";
             case 5:
                 return "Nro. Horas";
-            case 6:
-                return "Unidad";
 
             default:
                 return null;
@@ -79,11 +77,9 @@ public class ModeloTablaAsignatura extends AbstractTableModel {
             case 3:
                 return asignatura != null ? asignatura.getNombreAsignatura() : "";
             case 4:
-                return asignatura != null ? asignatura.getNumeroHoras() : "";
-            case 5:
                 return asignatura != null ? asignatura.getParalelo() : "";
-            case 6:
-                return asignatura != null ? asignatura.getUnidad() : "";
+            case 5:
+                return asignatura != null ? asignatura.getNumeroHoras() : "";
             default:
                 return null;
         }

@@ -50,4 +50,9 @@ public class Periodo {
         this.especificacion = especificacion;
     }
 
+    @Override
+    public String toString() {
+        return "IdPeriodo " + idPeriodo + " mesInicio " + mesInicio + " mesFin " + mesFin + " especificacion " + especificacion;
+    }
+    
 }

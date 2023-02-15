@@ -35,7 +35,7 @@ public class ModeloTablaAlumno extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 10;
+        return 11;
     }
 
     @Override
@@ -61,6 +61,8 @@ public class ModeloTablaAlumno extends AbstractTableModel {
                 return "Fecha Nacimiento";
             case 9:
                 return "Matricula";
+            case 10:
+                return "Asignatura";
 
             default:
                 return null;
@@ -96,6 +98,8 @@ public class ModeloTablaAlumno extends AbstractTableModel {
                 return alumno != null ? alumno.getFechaNacimiento() : "";
             case 9:
                 return alumno != null ? alumno.getMatricula().getIdMatricula() : "";
+            case 10:
+                return alumno != null ? alumno.getAsignatura().getNombreAsignatura() : "";
             default:
                 return null;
         }

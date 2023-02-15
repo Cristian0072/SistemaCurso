@@ -39,4 +39,10 @@ public class Alumno extends Persona {
         this.matricula = matricula;
     }
 
+    @Override
+    public String toString() {
+        return "IdAlumno " + idAlumno + " matricula " + matricula.toString() + " asignatura " + asignatura.toString();
+    }
+    
+    
 }

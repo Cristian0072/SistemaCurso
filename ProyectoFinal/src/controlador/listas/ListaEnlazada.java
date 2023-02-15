@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controlador.listas;
 
-import controlador.listas.excepciones.ListaNullExcepction;
+import controlador.listas.excepciones.AtributoException;
 import controlador.listas.excepciones.ListaNullException;
 import controlador.listas.excepciones.PosicionNoEncontradaException;
 import controlador.listas.excepciones.TamanioNoEncontradaException;
+import controlador.utilidades.Utilidades;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
 
 /**
  *
@@ -119,7 +118,7 @@ public class ListaEnlazada<E> {
         this.tamanio = tamanio;
     }
 
-    public E eliminar(Integer pos) throws ListaNullExcepction, TamanioNoEncontradaException {
+    public E eliminar(Integer pos) throws ListaNullException, TamanioNoEncontradaException {
         if (!estaVacia()) {
             E dato = null;
             if (pos >= 0 && pos < tamanio) {
@@ -143,10 +142,157 @@ public class ListaEnlazada<E> {
             }
             return dato;
         } else {
-            throw new ListaNullExcepction();
+            throw new ListaNullException();
         }
 
     }
+    //método para transformar lista a un arreglo
 
+    public E[] toArray() {
+        E[] arreglo = null;
+        if (tamanio > 0) {
+            arreglo = (E[]) Array.newInstance(cabecera.getDato().getClass(), tamanio);
+            NodoLista<E> aux = cabecera;
+            for (int i = 0; i < tamanio; i++) {
+                arreglo[i] = aux.getDato();
+                aux = aux.getSiguiente();
+            }
+        }
+        return arreglo;
+    }
+
+    //método para convertir un arreglo en una lista enlazada
+    public ListaEnlazada<E> toLista(E[] arreglo) {
+        vaciarLista();
+        for (int i = 0; i < arreglo.length; i++) {
+            insertar(arreglo[i]);
+        }
+        return this;
+    }
+
+    public void vaciarLista() {
+        cabecera = null;
+        tamanio = 0;
+    }
+
+    public ListaEnlazada<E> quickSort(ListaEnlazada<E> lista, String atributo) throws PosicionNoEncontradaException, IllegalArgumentException, IllegalAccessException, AtributoException {
+        if (lista.getTamanio() > 1) {
+            E[] arreglo = lista.toArray();
+            quickSort(arreglo, 0, arreglo.length - 1, atributo);
+            return toLista(arreglo);
+        }
+        return lista;
+    }
+
+    private void quickSort(E[] arreglo, int inicio, int fin, String atributo) throws AtributoException, IllegalArgumentException, IllegalAccessException {
+        if (inicio < fin) {
+            E pivote = arreglo[(inicio + fin) / 2];
+            int i = inicio;
+            int j = fin;
+            Field field = Utilidades.obtenerAtributo(pivote.getClass(), atributo);
+            field.setAccessible(true);
+            if (field == null) {
+                throw new AtributoException();
+            }
+            Object elemento = field.get(pivote);
+            while (i <= j) {
+                while (i <= j) {
+                    Object elemento1 = field.get(arreglo[i]);
+                    if (compararDatos(elemento1, elemento)) {
+                        i++;
+                    }
+                    break;
+                }
+                while (i <= j) {
+                    Object elemento1 = field.get(arreglo[j]);
+                    if (compararDatos(elemento, elemento1)) {
+                        j--;
+                    }
+                    break;
+                }
+                if (i <= j) {
+                    E aux = arreglo[i];
+                    arreglo[i] = arreglo[j];
+                    arreglo[j] = aux;
+                    i++;
+                    j--;
+                }
+            }
+            if (inicio < j) {
+                quickSort(arreglo, inicio, j, atributo);
+            }
+            if (i < fin) {
+                quickSort(arreglo, i, fin, atributo);
+            }
+        }
+    }
+
+    private Boolean compararDatos(Object dato, Object dato1) throws AtributoException, IllegalArgumentException, IllegalAccessException {
+        if (Utilidades.isNumber(dato.getClass())) {
+            if (((Number) dato).floatValue() < ((Number) dato1).floatValue()) {
+                return true;
+            }
+        } else if (Utilidades.isString(dato.getClass())) {
+            if (dato.toString().compareToIgnoreCase(dato1.toString()) < 0) {
+                return true;
+            }
+        } else if (dato.getClass().isEnum()) {
+            if (dato.toString().compareToIgnoreCase(dato1.toString()) < 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public ListaEnlazada<E> secuencial(String atributo, Object dato) throws Exception {
+        Class<E> clazz = null;
+        ListaEnlazada<E> lista = new ListaEnlazada<>();
+        if (tamanio > 0) {
+            clazz = (Class<E>) cabecera.getDato().getClass();
+            Boolean esObjeto = Utilidades.isObject(clazz);
+            E[] arreglo = toArray();
+            for (int i = 0; i < arreglo.length; i++) {
+                if (esObjeto) {
+                    Boolean bandera = buscarPosicionObjeto(arreglo[i], dato, clazz, atributo);
+                    if (bandera) {
+                        lista.insertar(arreglo[i]);
+                    }
+                } else {
+                    Boolean bandera = buscarPosicionPrimitivo(arreglo[i], dato);
+                    if (bandera) {
+                        lista.insertar(arreglo[i]);
+                    }
+                }
+            }
+        }
+        return lista;
+    }
+
+    private Boolean buscarPosicionPrimitivo(Object datoArreglo, Object buscar) {
+        if (Utilidades.isNumber(buscar.getClass())) {
+            if (((Number) datoArreglo).floatValue() == ((Number) buscar).floatValue()) {
+                return true;
+            }
+        } else if (Utilidades.isString(buscar.getClass())) {
+            if (datoArreglo.toString().toLowerCase().startsWith(buscar.toString().toLowerCase())
+                    || datoArreglo.toString().toLowerCase().endsWith(buscar.toString().toLowerCase())
+                    || datoArreglo.toString().toLowerCase().contains(buscar.toString().toLowerCase())
+                    || datoArreglo.toString().equalsIgnoreCase(buscar.toString().toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private Boolean buscarPosicionObjeto(E objeto, Object buscar, Class clazz, String atributo) throws Exception {
+        Field field = Utilidades.obtenerAtributo(clazz, atributo);
+        if (field == null) {
+            throw new AtributoException();
+        } else {
+            field.setAccessible(true);
+            Object aux = field.get(objeto);
+            return buscarPosicionPrimitivo(aux, buscar);
+        }
+    }
 
 }

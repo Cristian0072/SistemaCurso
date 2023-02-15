@@ -46,7 +46,7 @@ public class Matricula {
 
     @Override
     public String toString() {
-        return idMatricula.toString();
+        return idMatricula.toString()+" Periodo "+periodo.toString();
     }
 
 }

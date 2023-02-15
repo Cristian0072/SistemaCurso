@@ -50,4 +50,9 @@ public class Carrera {
         this.ciclos = ciclos;
     }
 
+    @Override
+    public String toString() {
+        return "ID " + id + " Nombre: " + nombre + " Seccion: " + seccion + " Ciclos: " + ciclos.toString();
+    }
+    
 }

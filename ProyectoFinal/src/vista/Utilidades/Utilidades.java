@@ -70,25 +70,27 @@ public class Utilidades {
     }
 
     public static ListaEnlazada<Ciclo> obtenerCiclos(JComboBox cbx) {
-        return (ListaEnlazada<Ciclo>) cbx.getSelectedItem();
+        ListaEnlazada<Ciclo> lista = new ListaEnlazada<>();
+        lista.insertar((Ciclo) cbx.getSelectedItem());
+        return lista;
     }
 
     public static void cargarAsignaturas(JComboBox cbx) {
         cbx.removeAllItems();
-        ControladorAsignatura asignatura = new ControladorAsignatura();
-        ListaEnlazada<Asignatura> lista = asignatura.listar();
-        for (int i = 0; i < lista.getTamanio(); i++) {
-            try {
+        try {
+            ControladorAsignatura asignatura = new ControladorAsignatura();
+            ListaEnlazada<Asignatura> lista = asignatura.listar();
+            for (int i = 0; i < lista.getTamanio(); i++) {
                 cbx.addItem(lista.obtener(i));
-            } catch (PosicionNoEncontradaException | ListaNullException ex) {
-                System.out.println("Error " + ex.getMessage());
             }
+        } catch (PosicionNoEncontradaException | ListaNullException ex) {
+            System.out.println("Error " + ex.getMessage());
         }
 
     }
 
-    public static ListaEnlazada<Asignatura> obtenerAsignaturas(JComboBox cbx) {
-        return (ListaEnlazada<Asignatura>) cbx.getSelectedItem();
+    public static Asignatura obtenerAsignatura(JComboBox cbx) {
+        return (Asignatura) cbx.getSelectedItem();
     }
 
     public static void cargarDocentes(JComboBox cbx) {
@@ -142,11 +144,15 @@ public class Utilidades {
     }
 
     public static ListaEnlazada<Carrera> obtenerCarreras(JComboBox cbx) {
-        return (ListaEnlazada<Carrera>) cbx.getSelectedItem();
+        ListaEnlazada<Carrera> lista = new ListaEnlazada<>();
+        lista.insertar((Carrera) cbx.getSelectedItem());
+        return lista;
     }
 
-    public static Asignatura obtenerAsignatura(JComboBox cbx) {
-        return (Asignatura) cbx.getSelectedItem();
+    public static ListaEnlazada<Asignatura> obtenerAsignaturas(JComboBox cbx) {
+        ListaEnlazada<Asignatura> lista = new ListaEnlazada<>();
+        lista.insertar((Asignatura) cbx.getSelectedItem());
+        return lista;
     }
 
     public static void cargarEstado(JComboBox cbx) {
@@ -205,25 +211,24 @@ public class Utilidades {
             cbx.addItem(seccion);
         }
     }
-
+//Método para validar una cédula Ecuatoriana
     public static Boolean esCedulaValida(String cedula) {
         if (cedula.length() != 10) {
             return false;
         } else {
-            int[] factores = {2, 1, 2, 1, 2, 1, 2, 1, 2};
-            int sum = 0;
-            for (int i = 0; i < factores.length; i++) {
-                int digit = Integer.parseInt(cedula.charAt(i) + "");
-                sum += digit * factores[i];
+            int[] coeficientes = {2, 1, 2, 1, 2, 1, 2, 1, 2};
+            int suma = 0;
+            for (int i = 0; i < 10 - 1; i++) {
+                int digito = Integer.parseInt(cedula.substring(i, i + 1));
+                int producto = digito * coeficientes[i];
+                suma += (producto >= 10) ? (producto - 9) : producto;
             }
-            int remainder = sum % 10;
-            int verificar = (10 - remainder) % 10;
-            int ultimoDigito = Integer.parseInt(cedula.charAt(9) + "");
-            return verificar == ultimoDigito;
+            int verificador = (suma % 10 == 0) ? 0 : (10 - (suma % 10));
+            return verificador == Integer.parseInt(cedula.substring(9));
         }
     }
 
-    public static void main(String[] args) {
+    /*    public static void main(String[] args) {
         System.out.println(esCedulaValida("1150197588"));
-    }
+    }*/
 }

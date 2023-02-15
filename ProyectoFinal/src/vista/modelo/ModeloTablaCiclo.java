@@ -14,7 +14,7 @@ import modelo.Ciclo;
 public class ModeloTablaCiclo extends AbstractTableModel {
 
     private ListaEnlazada<Ciclo> lista;
-    
+
     public ModeloTablaCiclo() {
         this.lista = new ListaEnlazada<>();
     }
@@ -66,7 +66,7 @@ public class ModeloTablaCiclo extends AbstractTableModel {
             case 1:
                 return ciclo != null ? ciclo.getNombre() : "";
             case 2:
-                return ciclo != null ? ciclo.getAsignaturas() : "";
+                return ciclo != null ? ciclo.getAsignaturas().getCabecera().getDato().getNombreAsignatura() : "";
             default:
                 return null;
         }

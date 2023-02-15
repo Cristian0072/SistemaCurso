@@ -19,9 +19,9 @@ public class FrmLogin extends javax.swing.JDialog {
         String cuenta[] = {"Admin", "Admin001"};
 
         if (txtUsuario.getText().trim().isEmpty() || new String(txtClave.getPassword()).trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Campos vacios", "AVISO", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Campos vacios", "AVISO", JOptionPane.WARNING_MESSAGE);
         } else if (txtUsuario.getText().trim().equals(cuenta[0]) && new String(txtClave.getPassword()).trim().equals(cuenta[1])) {
-            JOptionPane.showMessageDialog(null, "INGRESO CORRECTAMENTE", "OK", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "BIENVENIDO", "OK", JOptionPane.INFORMATION_MESSAGE);
             new FrmRegistro().setVisible(true);
             setVisible(false);
         } else if (!txtUsuario.getText().trim().equals(cuenta[0])) {

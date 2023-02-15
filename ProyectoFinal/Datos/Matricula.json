@@ -1,2 +1,99 @@
-
-
+{
+  "cabecera": {
+    "dato": {
+      "idMatricula": 1,
+      "fechaEmision": "02/02/2023 - 18:48:03",
+      "periodo": {
+        "idPeriodo": 1,
+        "mesInicio": "MAYO",
+        "mesFin": "ENERO",
+        "especificacion": "TRIMESTRE"
+      }
+    },
+    "siguiente": {
+      "dato": {
+        "idMatricula": 2,
+        "fechaEmision": "04/02/2023 - 20:39:23",
+        "periodo": {
+          "idPeriodo": 5,
+          "mesInicio": "ABRIL",
+          "mesFin": "AGOSTO",
+          "especificacion": "SEMESTRE"
+        }
+      },
+      "siguiente": {
+        "dato": {
+          "idMatricula": 3,
+          "fechaEmision": "06/02/2023 - 14:30:42",
+          "periodo": {
+            "idPeriodo": 7,
+            "mesInicio": "FEBRERO",
+            "mesFin": "SEPTIEMBRE",
+            "especificacion": "BIMESTRE"
+          }
+        },
+        "siguiente": {
+          "dato": {
+            "idMatricula": 4,
+            "fechaEmision": "07/02/2023 - 21:01:04",
+            "periodo": {
+              "idPeriodo": 3,
+              "mesInicio": "ENERO",
+              "mesFin": "AGOSTO",
+              "especificacion": "CUATRIMESTRE"
+            }
+          },
+          "siguiente": {
+            "dato": {
+              "idMatricula": 5,
+              "fechaEmision": "07/02/2023 - 21:01:12",
+              "periodo": {
+                "idPeriodo": 4,
+                "mesInicio": "ENERO",
+                "mesFin": "NOVIEMBRE",
+                "especificacion": "BIMESTRE"
+              }
+            },
+            "siguiente": {
+              "dato": {
+                "idMatricula": 6,
+                "fechaEmision": "07/02/2023 - 21:01:20",
+                "periodo": {
+                  "idPeriodo": 6,
+                  "mesInicio": "MAYO",
+                  "mesFin": "ENERO",
+                  "especificacion": "CUATRIMESTRE"
+                }
+              },
+              "siguiente": {
+                "dato": {
+                  "idMatricula": 7,
+                  "fechaEmision": "07/02/2023 - 21:01:41",
+                  "periodo": {
+                    "idPeriodo": 2,
+                    "mesInicio": "FEBRERO",
+                    "mesFin": "AGOSTO",
+                    "especificacion": "BIMESTRE"
+                  }
+                },
+                "siguiente": {
+                  "dato": {
+                    "idMatricula": 8,
+                    "fechaEmision": "12/02/2023 - 18:39:20",
+                    "periodo": {
+                      "idPeriodo": 6,
+                      "mesInicio": "MAYO",
+                      "mesFin": "ENERO",
+                      "especificacion": "CUATRIMESTRE"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tamanio": 8
+}

@@ -2,8 +2,9 @@ package controlador;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import controlador.listas.ListaEnlazada;
-import controlador.listas.excepciones.ListaNullExcepction;
+import controlador.listas.excepciones.ListaNullException;
 import controlador.listas.excepciones.TamanioNoEncontradaException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -61,8 +62,8 @@ public class ControladorCiclo {
     public ListaEnlazada<Ciclo> listar() {
         FileReader file = null;
         try {
-            file = new FileReader("Datos" + File.separatorChar + ciclo.getClass().getSimpleName() + ".json");
-            lista = new Gson().fromJson(file, ListaEnlazada.class);
+            file = new FileReader("Datos" + File.separatorChar + new Ciclo().getClass().getSimpleName() + ".json");
+            lista = new Gson().fromJson(file, new TypeToken<ListaEnlazada<Ciclo>>(){}.getType());
         } catch (FileNotFoundException ex) {
             System.out.println("Error " + ex.getMessage());
         }
@@ -74,7 +75,7 @@ public class ControladorCiclo {
             lista = listar();
             lista.eliminar(pos);
             return guardar(lista);
-        } catch (ListaNullExcepction | TamanioNoEncontradaException ex) {
+        } catch (ListaNullException | TamanioNoEncontradaException ex) {
             System.out.println("Error " + ex.getMessage());
         }
         return false;
@@ -84,11 +85,11 @@ public class ControladorCiclo {
         return guardar(lista);
     }
 
-   /* public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Ciclo ciclo = new Ciclo();
-        ciclo.setNombre("Ciclo 1");
+        ciclo.setNombre("Ciclo 3");
         ciclo.setId(1);
-
+      
         ControladorAsignatura asignatura = new ControladorAsignatura();
         ciclo.setAsignaturas(asignatura.listar());
         ControladorCiclo cicloEnlazado = new ControladorCiclo();

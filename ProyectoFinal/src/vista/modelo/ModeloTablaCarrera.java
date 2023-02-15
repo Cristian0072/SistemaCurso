@@ -70,7 +70,7 @@ public class ModeloTablaCarrera extends AbstractTableModel {
             case 2:
                 return carrera != null ? carrera.getSeccion() : "";
             case 3:
-                return carrera != null ? carrera.getCiclos() : "";
+                return carrera != null ? carrera.getCiclos().getCabecera().getDato().getNombre() : "";
             default:
                 return null;
         }

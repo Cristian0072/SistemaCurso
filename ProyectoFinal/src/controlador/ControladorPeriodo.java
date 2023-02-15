@@ -2,8 +2,9 @@ package controlador;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import controlador.listas.ListaEnlazada;
-import controlador.listas.excepciones.ListaNullExcepction;
+import controlador.listas.excepciones.ListaNullException;
 import controlador.listas.excepciones.TamanioNoEncontradaException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -62,20 +63,25 @@ public class ControladorPeriodo {
         FileReader file = null;
         try {
             file = new FileReader("Datos" + File.separatorChar + getPeriodo().getClass().getSimpleName() + ".json");
-            lista = new Gson().fromJson(file, ListaEnlazada.class);
+            lista = new Gson().fromJson(file, new TypeToken<ListaEnlazada<Periodo>>(){}.getType());
         } catch (FileNotFoundException ex) {
             System.out.println("Error " + ex.getMessage());
         }
         return lista;
     }
 
-    public Boolean borrar(Integer pos) throws IOException, ListaNullExcepction, TamanioNoEncontradaException {
-        lista = listar();
-        lista.eliminar(pos);
-        return guardar(lista);
+    public Boolean borrar(Integer pos) {
+        try {
+            lista = listar();
+            lista.eliminar(pos);
+            return guardar(lista);
+        } catch (ListaNullException | TamanioNoEncontradaException ex) {
+            System.out.println("Error " + ex.getMessage());
+        }
+        return false;
     }
 
-    public Boolean actualizar(ListaEnlazada<Periodo> listaEnlazada) throws IOException {
+    public Boolean actualizar(ListaEnlazada<Periodo> listaEnlazada) {
         return guardar(lista);
     }
     /*public static void main(String[] args) {

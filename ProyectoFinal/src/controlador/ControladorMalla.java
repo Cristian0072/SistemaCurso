@@ -2,8 +2,9 @@ package controlador;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import controlador.listas.ListaEnlazada;
-import controlador.listas.excepciones.ListaNullExcepction;
+import controlador.listas.excepciones.ListaNullException;
 import controlador.listas.excepciones.TamanioNoEncontradaException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -61,8 +62,9 @@ public class ControladorMalla {
     public ListaEnlazada<Malla> listar() {
 
         try {
-            FileReader file = new FileReader("Datos" + File.separatorChar + getMalla().getClass().getSimpleName() + ".json");
-            lista = new Gson().fromJson(file, ListaEnlazada.class);
+            FileReader file = new FileReader("Datos" + File.separatorChar + new Malla().getClass().getSimpleName() + ".json");
+            lista = new Gson().fromJson(file, new TypeToken<ListaEnlazada<Malla>>() {
+            }.getType());
         } catch (FileNotFoundException ex) {
             System.out.println("Error " + ex.getMessage());
         }
@@ -74,7 +76,7 @@ public class ControladorMalla {
             lista = listar();
             lista.eliminar(pos);
             return guardar(lista);
-        } catch (ListaNullExcepction | TamanioNoEncontradaException ex) {
+        } catch (ListaNullException | TamanioNoEncontradaException ex) {
             System.out.println("Error " + ex.getMessage());
         }
         return false;
@@ -84,4 +86,15 @@ public class ControladorMalla {
         return guardar(lista);
     }
 
+   /* public static void main(String[] args) {
+        Malla malla = new Malla();
+        malla.setId(1);
+        malla.setRegimen("Costa");
+        malla.setCarreras(new ControladorCarrera().listar());
+        ListaEnlazada<Malla> lista = new ListaEnlazada<>();
+        lista.insertar(malla);
+        ControladorMalla cm = new ControladorMalla();
+        cm.guardar(lista);
+        cm.listar().imprimir();
+    }*/
 }

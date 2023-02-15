@@ -40,4 +40,9 @@ public class Ciclo {
         this.asignaturas = asignaturas;
     }
 
+    @Override
+    public String toString() {
+        return "ID " + id + " nombre " + nombre + " asignaturas " + asignaturas.toString();
+    }
+
 }

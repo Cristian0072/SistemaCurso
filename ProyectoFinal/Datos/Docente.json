@@ -3,18 +3,69 @@
     "dato": {
       "idDocente": 1,
       "tituloTercerNivel": "Ingenieria",
-      "tituloCuartoNivel": "Doctorado",
+      "tituloCuartoNivel": "Maestria",
       "aniosExpDocente": 4,
-      "aniosExpLaboral": 5,
-      "nombres": "Juan Rafael",
-      "apellidos": "Torres Guillen",
+      "aniosExpLaboral": 8,
+      "nombres": "Pedro Pablo",
+      "apellidos": "Camacho Fernandes",
       "identificacion": "1120789632",
       "direccion": "Avn. Huaynacapa y Los Naranjos",
       "telefono": "0998563789",
-      "ciudad": "Cuenca",
+      "ciudad": "Quito",
       "fechaNacimiento": "01/01/1990",
       "genero": "MASCULINO"
+    },
+    "siguiente": {
+      "dato": {
+        "idDocente": 2,
+        "tituloTercerNivel": "Ingenieria",
+        "tituloCuartoNivel": "Maestria",
+        "aniosExpDocente": 8,
+        "aniosExpLaboral": 14,
+        "nombres": "Jairo Manuel",
+        "apellidos": "Escamilla Torres",
+        "identificacion": "1150197588",
+        "direccion": "Los Laureles",
+        "telefono": "0982546395",
+        "ciudad": "Guayaquil",
+        "fechaNacimiento": "25/09/1980 - 14:22:48",
+        "genero": "MASCULINO"
+      },
+      "siguiente": {
+        "dato": {
+          "idDocente": 3,
+          "tituloTercerNivel": "Ingenieria",
+          "tituloCuartoNivel": "Maestria",
+          "aniosExpDocente": 8,
+          "aniosExpLaboral": 16,
+          "nombres": "Mayra Fernanda",
+          "apellidos": "Ramos Riquelme",
+          "identificacion": "0701916173",
+          "direccion": "El Oro",
+          "telefono": "0982365411",
+          "ciudad": "Machala",
+          "fechaNacimiento": "27/08/1975",
+          "genero": "FEMENINO"
+        },
+        "siguiente": {
+          "dato": {
+            "idDocente": 4,
+            "tituloTercerNivel": "Ingenieria",
+            "tituloCuartoNivel": "Maestria",
+            "aniosExpDocente": 14,
+            "aniosExpLaboral": 19,
+            "nombres": "Mario Humberto",
+            "apellidos": "Camacho Calva",
+            "identificacion": "0700652068",
+            "direccion": "24 de noviembre",
+            "telefono": "0985647782",
+            "ciudad": "Machala",
+            "fechaNacimiento": "09/02/1987",
+            "genero": "MASCULINO"
+          }
+        }
+      }
     }
   },
-  "tamanio": 1
+  "tamanio": 4
 }

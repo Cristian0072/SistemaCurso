@@ -1,2 +1,211 @@
-
-
+{
+  "cabecera": {
+    "dato": {
+      "id": 1,
+      "carreras": {
+        "cabecera": {
+          "dato": {
+            "id": 1,
+            "nombre": "Computacion",
+            "seccion": "NOCTURNO",
+            "ciclos": {
+              "cabecera": {
+                "dato": {
+                  "id": 1,
+                  "nombre": "Ciclo 3",
+                  "asignaturas": {
+                    "cabecera": {
+                      "dato": {
+                        "id": 1,
+                        "nombreAsignatura": "Base de Datos",
+                        "paralelo": "A",
+                        "docente": {
+                          "idDocente": 1,
+                          "tituloTercerNivel": "Ingenieria",
+                          "tituloCuartoNivel": "Maestria",
+                          "aniosExpDocente": 4,
+                          "aniosExpLaboral": 8,
+                          "nombres": "Pedro Pablo",
+                          "apellidos": "Camacho Fernandes",
+                          "identificacion": "1120986354",
+                          "direccion": "Av. Los Naranjos",
+                          "telefono": "0985623457",
+                          "ciudad": "Quito",
+                          "fechaNacimiento": "15/05/1980",
+                          "genero": "MASCULINO"
+                        },
+                        "estadoAsignatura": "APROBADA",
+                        "numeroHoras": 50
+                      }
+                    },
+                    "tamanio": 1
+                  }
+                }
+              },
+              "tamanio": 1
+            }
+          }
+        },
+        "tamanio": 1
+      },
+      "regimen": "Costa"
+    },
+    "siguiente": {
+      "dato": {
+        "id": 2,
+        "carreras": {
+          "cabecera": {
+            "dato": {
+              "id": 2,
+              "nombre": "Minas",
+              "seccion": "MATUTINO",
+              "ciclos": {
+                "cabecera": {
+                  "dato": {
+                    "id": 2,
+                    "nombre": "Ciclo 2",
+                    "asignaturas": {
+                      "cabecera": {
+                        "dato": {
+                          "id": 2,
+                          "nombreAsignatura": "Disenio de circuitos",
+                          "paralelo": "C",
+                          "docente": {
+                            "idDocente": 2,
+                            "tituloTercerNivel": "Ingenieria",
+                            "tituloCuartoNivel": "Maestria",
+                            "aniosExpDocente": 8,
+                            "aniosExpLaboral": 14,
+                            "nombres": "Jairo Manuel",
+                            "apellidos": "Escamilla Torres",
+                            "identificacion": "1150197588",
+                            "direccion": "Los Laureles",
+                            "telefono": "0982546395",
+                            "ciudad": "Guayaquil",
+                            "fechaNacimiento": "25/09/1980 - 14:22:48",
+                            "genero": "MASCULINO"
+                          },
+                          "estadoAsignatura": "PENDIENTE",
+                          "numeroHoras": 78
+                        }
+                      },
+                      "tamanio": 1
+                    }
+                  }
+                },
+                "tamanio": 1
+              }
+            }
+          },
+          "tamanio": 1
+        },
+        "regimen": "Sierra 2022-2023"
+      },
+      "siguiente": {
+        "dato": {
+          "id": 3,
+          "carreras": {
+            "cabecera": {
+              "dato": {
+                "id": 1,
+                "nombre": "Computacion",
+                "seccion": "NOCTURNO",
+                "ciclos": {
+                  "cabecera": {
+                    "dato": {
+                      "id": 1,
+                      "nombre": "Ciclo 3",
+                      "asignaturas": {
+                        "cabecera": {
+                          "dato": {
+                            "id": 1,
+                            "nombreAsignatura": "Base de Datos",
+                            "paralelo": "A",
+                            "docente": {
+                              "idDocente": 1,
+                              "tituloTercerNivel": "Ingenieria",
+                              "tituloCuartoNivel": "Maestria",
+                              "aniosExpDocente": 4,
+                              "aniosExpLaboral": 8,
+                              "nombres": "Pedro Pablo",
+                              "apellidos": "Camacho Fernandes",
+                              "identificacion": "1120986354",
+                              "direccion": "Av. Los Naranjos",
+                              "telefono": "0985623457",
+                              "ciudad": "Quito",
+                              "fechaNacimiento": "15/05/1980",
+                              "genero": "MASCULINO"
+                            },
+                            "estadoAsignatura": "APROBADA",
+                            "numeroHoras": 50
+                          }
+                        },
+                        "tamanio": 1
+                      }
+                    }
+                  },
+                  "tamanio": 1
+                }
+              }
+            },
+            "tamanio": 1
+          },
+          "regimen": "Costa 2020 - 2021"
+        },
+        "siguiente": {
+          "dato": {
+            "id": 4,
+            "carreras": {
+              "cabecera": {
+                "dato": {
+                  "id": 2,
+                  "nombre": "Minas",
+                  "seccion": "MATUTINO",
+                  "ciclos": {
+                    "cabecera": {
+                      "dato": {
+                        "id": 2,
+                        "nombre": "Ciclo 2",
+                        "asignaturas": {
+                          "cabecera": {
+                            "dato": {
+                              "id": 2,
+                              "nombreAsignatura": "Disenio de circuitos",
+                              "paralelo": "C",
+                              "docente": {
+                                "idDocente": 2,
+                                "tituloTercerNivel": "Ingenieria",
+                                "tituloCuartoNivel": "Maestria",
+                                "aniosExpDocente": 8,
+                                "aniosExpLaboral": 14,
+                                "nombres": "Jairo Manuel",
+                                "apellidos": "Escamilla Torres",
+                                "identificacion": "1150197588",
+                                "direccion": "Los Laureles",
+                                "telefono": "0982546395",
+                                "ciudad": "Guayaquil",
+                                "fechaNacimiento": "25/09/1980 - 14:22:48",
+                                "genero": "MASCULINO"
+                              },
+                              "estadoAsignatura": "PENDIENTE",
+                              "numeroHoras": 78
+                            }
+                          },
+                          "tamanio": 1
+                        }
+                      }
+                    },
+                    "tamanio": 1
+                  }
+                }
+              },
+              "tamanio": 1
+            },
+            "regimen": "Sierra 2021 -  2022"
+          }
+        }
+      }
+    }
+  },
+  "tamanio": 4
+}

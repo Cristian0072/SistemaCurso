@@ -11,7 +11,6 @@ public class Asignatura {
     private Integer id;
     private String nombreAsignatura;
     private Character paralelo;
-    private String unidad;
     private Docente docente;
     private Estado estadoAsignatura;
     private Integer numeroHoras;
@@ -44,14 +43,6 @@ public class Asignatura {
         this.paralelo = paralelo;
     }
 
-    public String getUnidad() {
-        return unidad;
-    }
-
-    public void setUnidad(String unidad) {
-        this.unidad = unidad;
-    }
-
     public Docente getDocente() {
         return docente;
     }
@@ -74,6 +65,11 @@ public class Asignatura {
 
     public void setNumeroHoras(Integer numeroHoras) {
         this.numeroHoras = numeroHoras;
+    }
+
+    @Override
+    public String toString() {
+        return "ID " + id + " nombreAsignatura " + nombreAsignatura + " paralelo " + paralelo + " docente " + docente + " estadoAsignatura " + estadoAsignatura + " numeroHoras " + numeroHoras;
     }
 
 }

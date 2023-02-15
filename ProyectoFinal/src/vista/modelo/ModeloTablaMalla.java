@@ -64,7 +64,7 @@ public class ModeloTablaMalla extends AbstractTableModel {
             case 0:
                 return malla != null ? malla.getId() : "";
             case 1:
-                return malla != null ? malla.getCarreras() : "";
+                return malla != null ? malla.getCarreras().getCabecera().getDato().getNombre() : "";
             case 2:
                 return malla != null ? malla.getRegimen() : "";
             default:

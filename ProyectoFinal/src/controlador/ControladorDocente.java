@@ -2,8 +2,9 @@ package controlador;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import controlador.listas.ListaEnlazada;
-import controlador.listas.excepciones.ListaNullExcepction;
+import controlador.listas.excepciones.ListaNullException;
 import controlador.listas.excepciones.TamanioNoEncontradaException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -47,7 +48,7 @@ public class ControladorDocente {
     public Boolean guardar(ListaEnlazada<Docente> docente) {
         FileWriter file = null;
         try {
-            file = new FileWriter("Datos" + File.separatorChar + getDocente().getClass().getSimpleName() + ".json");
+            file = new FileWriter("Datos" + File.separatorChar + new Docente().getClass().getSimpleName() + ".json");
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             file.write(gson.toJson(docente));
             file.close();
@@ -62,7 +63,7 @@ public class ControladorDocente {
         FileReader file = null;
         try {
             file = new FileReader("Datos" + File.separatorChar + getDocente().getClass().getSimpleName() + ".json");
-            lista = new Gson().fromJson(file, ListaEnlazada.class);
+            lista = new Gson().fromJson(file, new TypeToken<ListaEnlazada<Docente>>(){}.getType());
         } catch (FileNotFoundException ex) {
             System.out.println("Error " + ex.getMessage());
         }
@@ -74,7 +75,7 @@ public class ControladorDocente {
             lista = listar();
             lista.eliminar(pos);
             return guardar(lista);
-        } catch (ListaNullExcepction | TamanioNoEncontradaException ex) {
+        } catch (ListaNullException | TamanioNoEncontradaException ex) {
             System.out.println("Error " + ex.getMessage());
         }
         return false;
@@ -88,16 +89,16 @@ public class ControladorDocente {
         ControladorDocente docente = new ControladorDocente();
         docente.getDocente().setIdDocente(1);
         docente.getDocente().setAniosExpDocente(4);
-        docente.getDocente().setAniosExpLaboral(5);
-        docente.getDocente().setApellidos("Torres Guillen");
-        docente.getDocente().setNombres("Juan Rafael");
-        docente.getDocente().setCiudad("Cuenca");
+        docente.getDocente().setAniosExpLaboral(8);
+        docente.getDocente().setApellidos("Camacho Fernandes");
+        docente.getDocente().setNombres("Pedro Pablo");
+        docente.getDocente().setCiudad("Quito");
         docente.getDocente().setDireccion("Avn. Huaynacapa y Los Naranjos");
         docente.getDocente().setFechaNacimiento("01/01/1990");
         docente.getDocente().setGenero(Generos.MASCULINO);
         docente.getDocente().setIdentificacion("1120789632");
         docente.getDocente().setTelefono("0998563789");
-        docente.getDocente().setTituloCuartoNivel("Doctorado");
+        docente.getDocente().setTituloCuartoNivel("Maestria");
         docente.getDocente().setTituloTercerNivel("Ingenieria");
         ListaEnlazada<Docente> listaEnlazada = new ListaEnlazada<>();
         listaEnlazada.insertar(docente.getDocente());

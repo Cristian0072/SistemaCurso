@@ -1,3 +1,123 @@
 {
-  "tamanio": 0
+  "cabecera": {
+    "dato": {
+      "id": 1,
+      "nombreAsignatura": "Base de Datos",
+      "paralelo": "A",
+      "docente": {
+        "idDocente": 1,
+        "tituloTercerNivel": "Ingenieria",
+        "tituloCuartoNivel": "Maestria",
+        "aniosExpDocente": 4,
+        "aniosExpLaboral": 8,
+        "nombres": "Pedro Pablo",
+        "apellidos": "Camacho Fernandes",
+        "identificacion": "1120986354",
+        "direccion": "Av. Los Naranjos",
+        "telefono": "0985623457",
+        "ciudad": "Quito",
+        "fechaNacimiento": "15/05/1980",
+        "genero": "MASCULINO"
+      },
+      "estadoAsignatura": "APROBADA",
+      "numeroHoras": 50
+    },
+    "siguiente": {
+      "dato": {
+        "id": 2,
+        "nombreAsignatura": "Disenio de circuitos",
+        "paralelo": "C",
+        "docente": {
+          "idDocente": 2,
+          "tituloTercerNivel": "Ingenieria",
+          "tituloCuartoNivel": "Maestria",
+          "aniosExpDocente": 8,
+          "aniosExpLaboral": 14,
+          "nombres": "Jairo Manuel",
+          "apellidos": "Escamilla Torres",
+          "identificacion": "1150197588",
+          "direccion": "Los Laureles",
+          "telefono": "0982546395",
+          "ciudad": "Guayaquil",
+          "fechaNacimiento": "25/09/1980 - 14:22:48",
+          "genero": "MASCULINO"
+        },
+        "estadoAsignatura": "PENDIENTE",
+        "numeroHoras": 78
+      },
+      "siguiente": {
+        "dato": {
+          "id": 3,
+          "nombreAsignatura": "Estructura de Datos",
+          "paralelo": "H",
+          "docente": {
+            "idDocente": 1,
+            "tituloTercerNivel": "Ingenieria",
+            "tituloCuartoNivel": "Maestria",
+            "aniosExpDocente": 4,
+            "aniosExpLaboral": 8,
+            "nombres": "Pedro Pablo",
+            "apellidos": "Camacho Fernandes",
+            "identificacion": "1120789632",
+            "direccion": "Avn. Huaynacapa y Los Naranjos",
+            "telefono": "0998563789",
+            "ciudad": "Quito",
+            "fechaNacimiento": "01/01/1990",
+            "genero": "MASCULINO"
+          },
+          "estadoAsignatura": "APROBADA",
+          "numeroHoras": 100
+        },
+        "siguiente": {
+          "dato": {
+            "id": 4,
+            "nombreAsignatura": "POO",
+            "paralelo": "A",
+            "docente": {
+              "idDocente": 1,
+              "tituloTercerNivel": "Ingenieria",
+              "tituloCuartoNivel": "Maestria",
+              "aniosExpDocente": 4,
+              "aniosExpLaboral": 8,
+              "nombres": "Pedro Pablo",
+              "apellidos": "Camacho Fernandes",
+              "identificacion": "1120789632",
+              "direccion": "Avn. Huaynacapa y Los Naranjos",
+              "telefono": "0998563789",
+              "ciudad": "Quito",
+              "fechaNacimiento": "01/01/1990",
+              "genero": "MASCULINO"
+            },
+            "estadoAsignatura": "PENDIENTE",
+            "numeroHoras": 158
+          },
+          "siguiente": {
+            "dato": {
+              "id": 5,
+              "nombreAsignatura": "Matematicas Discretas",
+              "paralelo": "E",
+              "docente": {
+                "idDocente": 4,
+                "tituloTercerNivel": "Ingenieria",
+                "tituloCuartoNivel": "Maestria",
+                "aniosExpDocente": 14,
+                "aniosExpLaboral": 19,
+                "nombres": "Mario Humberto",
+                "apellidos": "Camacho Calva",
+                "identificacion": "0700652068",
+                "direccion": "24 de noviembre",
+                "telefono": "0985647782",
+                "ciudad": "Machala",
+                "fechaNacimiento": "09/02/1987",
+                "genero": "MASCULINO"
+              },
+              "estadoAsignatura": "PENDIENTE",
+              "numeroHoras": 85
+            }
+          }
+        }
+      }
+    }
+  },
+  "tamanio": 5
 }

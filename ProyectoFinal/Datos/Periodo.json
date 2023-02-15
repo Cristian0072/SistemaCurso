@@ -1,42 +1,42 @@
 {
   "cabecera": {
     "dato": {
-      "idPeriodo": 1.0,
+      "idPeriodo": 1,
       "mesInicio": "MAYO",
       "mesFin": "ENERO",
       "especificacion": "TRIMESTRE"
     },
     "siguiente": {
       "dato": {
-        "idPeriodo": 2.0,
+        "idPeriodo": 2,
         "mesInicio": "FEBRERO",
         "mesFin": "AGOSTO",
         "especificacion": "BIMESTRE"
       },
       "siguiente": {
         "dato": {
-          "idPeriodo": 3.0,
+          "idPeriodo": 3,
           "mesInicio": "ENERO",
           "mesFin": "AGOSTO",
           "especificacion": "CUATRIMESTRE"
         },
         "siguiente": {
           "dato": {
-            "idPeriodo": 4.0,
+            "idPeriodo": 4,
             "mesInicio": "ENERO",
             "mesFin": "NOVIEMBRE",
             "especificacion": "BIMESTRE"
           },
           "siguiente": {
             "dato": {
-              "idPeriodo": 5.0,
+              "idPeriodo": 5,
               "mesInicio": "ABRIL",
               "mesFin": "AGOSTO",
               "especificacion": "SEMESTRE"
             },
             "siguiente": {
               "dato": {
-                "idPeriodo": 6.0,
+                "idPeriodo": 6,
                 "mesInicio": "MAYO",
                 "mesFin": "ENERO",
                 "especificacion": "CUATRIMESTRE"
@@ -47,6 +47,30 @@
                   "mesInicio": "FEBRERO",
                   "mesFin": "SEPTIEMBRE",
                   "especificacion": "BIMESTRE"
+                },
+                "siguiente": {
+                  "dato": {
+                    "idPeriodo": 8,
+                    "mesInicio": "ENERO",
+                    "mesFin": "AGOSTO",
+                    "especificacion": "CUATRIMESTRE"
+                  },
+                  "siguiente": {
+                    "dato": {
+                      "idPeriodo": 9,
+                      "mesInicio": "ENERO",
+                      "mesFin": "AGOSTO",
+                      "especificacion": "SEMESTRE"
+                    },
+                    "siguiente": {
+                      "dato": {
+                        "idPeriodo": 10,
+                        "mesInicio": "FEBRERO",
+                        "mesFin": "SEPTIEMBRE",
+                        "especificacion": "CUATRIMESTRE"
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -55,5 +79,5 @@
       }
     }
   },
-  "tamanio": 7
+  "tamanio": 10
 }

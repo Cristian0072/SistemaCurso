@@ -2,8 +2,9 @@ package controlador;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import controlador.listas.ListaEnlazada;
-import controlador.listas.excepciones.ListaNullExcepction;
+import controlador.listas.excepciones.ListaNullException;
 import controlador.listas.excepciones.TamanioNoEncontradaException;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -48,7 +49,7 @@ public class ControladorMatricula {
         try {
             FileWriter file = new FileWriter("Datos" + File.separatorChar + getMatricula().getClass().getSimpleName() + ".json");
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            file.write(gson.toJson(matricula) + "\n");
+            file.write(gson.toJson(matricula));
             file.close();
             return true;
         } catch (IOException ex) {
@@ -61,7 +62,7 @@ public class ControladorMatricula {
         FileReader file = null;
         try {
             file = new FileReader("Datos" + File.separatorChar + getMatricula().getClass().getSimpleName() + ".json");
-            lista = new Gson().fromJson(file, ListaEnlazada.class);
+            lista = new Gson().fromJson(file, new TypeToken<ListaEnlazada<Matricula>>(){}.getType());
         } catch (FileNotFoundException ex) {
             System.out.println("Error " + ex.getMessage());
         }
@@ -73,7 +74,7 @@ public class ControladorMatricula {
             lista = listar();
             lista.eliminar(pos);
             return guardar(lista);
-        } catch (ListaNullExcepction | TamanioNoEncontradaException ex) {
+        } catch (ListaNullException | TamanioNoEncontradaException ex) {
             System.out.println("Error " + ex.getMessage());
         }
         return false;
@@ -83,7 +84,7 @@ public class ControladorMatricula {
         return guardar(lista);
     }
 
- /*   public static void main(String[] args) {
+   /*public static void main(String[] args) {
         try {
             Matricula matricula = new Matricula();
             matricula.setIdMatricula(1);
@@ -94,8 +95,10 @@ public class ControladorMatricula {
             periodo1=periodo.listar().obtener(0);
             matricula.setPeriodo(periodo1);
             ControladorMatricula matricula1 = new ControladorMatricula();
-            matricula1.getLista().insertar(matricula);
-            matricula1.guardar(matricula1.getLista());
+            ListaEnlazada<Matricula> lista = new ListaEnlazada<>();
+            lista.insertar(matricula);
+            matricula1.guardar(lista);
+            matricula1.listar().imprimir();
         } catch (PosicionNoEncontradaException | ListaNullException ex) {
             System.out.println("Error " + ex.getMessage());
 
