@@ -68,6 +68,14 @@
                         "mesInicio": "FEBRERO",
                         "mesFin": "SEPTIEMBRE",
                         "especificacion": "CUATRIMESTRE"
+                      },
+                      "siguiente": {
+                        "dato": {
+                          "idPeriodo": 11,
+                          "mesInicio": "JUNIO",
+                          "mesFin": "FEBRERO",
+                          "especificacion": "TRIMESTRE"
+                        }
                       }
                     }
                   }
@@ -79,5 +87,5 @@
       }
     }
   },
-  "tamanio": 10
+  "tamanio": 11
 }

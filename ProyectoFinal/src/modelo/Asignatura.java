@@ -1,7 +1,5 @@
 package modelo;
 
-import modelo.enums.Estado;
-
 /**
  *
  * @author SONY VAIO
@@ -10,9 +8,8 @@ public class Asignatura {
 
     private Integer id;
     private String nombreAsignatura;
-    private Character paralelo;
     private Docente docente;
-    private Estado estadoAsignatura;
+
     private Integer numeroHoras;
 
     public Asignatura() {
@@ -35,28 +32,12 @@ public class Asignatura {
         this.nombreAsignatura = nombreAsignatura;
     }
 
-    public Character getParalelo() {
-        return paralelo;
-    }
-
-    public void setParalelo(Character paralelo) {
-        this.paralelo = paralelo;
-    }
-
     public Docente getDocente() {
         return docente;
     }
 
     public void setDocente(Docente docente) {
         this.docente = docente;
-    }
-
-    public Estado getEstadoAsignatura() {
-        return estadoAsignatura;
-    }
-
-    public void setEstadoAsignatura(Estado estadoAsignatura) {
-        this.estadoAsignatura = estadoAsignatura;
     }
 
     public Integer getNumeroHoras() {
@@ -69,7 +50,7 @@ public class Asignatura {
 
     @Override
     public String toString() {
-        return "ID " + id + " nombreAsignatura " + nombreAsignatura + " paralelo " + paralelo + " docente " + docente + " estadoAsignatura " + estadoAsignatura + " numeroHoras " + numeroHoras;
+        return nombreAsignatura + " " + docente.toString() + " " + numeroHoras;
     }
 
 }

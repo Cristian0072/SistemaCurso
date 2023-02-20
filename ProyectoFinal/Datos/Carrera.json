@@ -14,7 +14,6 @@
                 "dato": {
                   "id": 1,
                   "nombreAsignatura": "Base de Datos",
-                  "paralelo": "A",
                   "docente": {
                     "idDocente": 1,
                     "tituloTercerNivel": "Ingenieria",
@@ -30,7 +29,6 @@
                     "fechaNacimiento": "15/05/1980",
                     "genero": "MASCULINO"
                   },
-                  "estadoAsignatura": "APROBADA",
                   "numeroHoras": 50
                 }
               },
@@ -56,7 +54,6 @@
                   "dato": {
                     "id": 2,
                     "nombreAsignatura": "Disenio de circuitos",
-                    "paralelo": "C",
                     "docente": {
                       "idDocente": 2,
                       "tituloTercerNivel": "Ingenieria",
@@ -72,7 +69,6 @@
                       "fechaNacimiento": "25/09/1980 - 14:22:48",
                       "genero": "MASCULINO"
                     },
-                    "estadoAsignatura": "PENDIENTE",
                     "numeroHoras": 78
                   }
                 },
@@ -82,8 +78,316 @@
           },
           "tamanio": 1
         }
+      },
+      "siguiente": {
+        "dato": {
+          "id": 3,
+          "nombre": "Electromecanica",
+          "seccion": "VESPERTINO",
+          "ciclos": {
+            "cabecera": {
+              "dato": {
+                "id": 5,
+                "nombre": "Ciclo 1",
+                "asignaturas": {
+                  "cabecera": {
+                    "dato": {
+                      "id": 5,
+                      "nombreAsignatura": "Matematicas Discretas",
+                      "docente": {
+                        "idDocente": 4,
+                        "tituloTercerNivel": "Ingenieria",
+                        "tituloCuartoNivel": "Maestria",
+                        "aniosExpDocente": 14,
+                        "aniosExpLaboral": 19,
+                        "nombres": "Mario Humberto",
+                        "apellidos": "Camacho Calva",
+                        "identificacion": "0700652068",
+                        "direccion": "24 de noviembre",
+                        "telefono": "0985647782",
+                        "ciudad": "Machala",
+                        "fechaNacimiento": "09/02/1987",
+                        "genero": "MASCULINO"
+                      },
+                      "numeroHoras": 85
+                    }
+                  },
+                  "tamanio": 1
+                }
+              }
+            },
+            "tamanio": 1
+          }
+        },
+        "siguiente": {
+          "dato": {
+            "id": 4,
+            "nombre": "Computacion",
+            "seccion": "MATUTINO",
+            "ciclos": {
+              "cabecera": {
+                "dato": {
+                  "id": 5,
+                  "nombre": "Ciclo 1",
+                  "asignaturas": {
+                    "cabecera": {
+                      "dato": {
+                        "id": 5,
+                        "nombreAsignatura": "Matematicas Discretas",
+                        "docente": {
+                          "idDocente": 4,
+                          "tituloTercerNivel": "Ingenieria",
+                          "tituloCuartoNivel": "Maestria",
+                          "aniosExpDocente": 14,
+                          "aniosExpLaboral": 19,
+                          "nombres": "Mario Humberto",
+                          "apellidos": "Camacho Calva",
+                          "identificacion": "0700652068",
+                          "direccion": "24 de noviembre",
+                          "telefono": "0985647782",
+                          "ciudad": "Machala",
+                          "fechaNacimiento": "09/02/1987",
+                          "genero": "MASCULINO"
+                        },
+                        "numeroHoras": 85
+                      }
+                    },
+                    "tamanio": 1
+                  }
+                }
+              },
+              "tamanio": 1
+            }
+          },
+          "siguiente": {
+            "dato": {
+              "id": 5,
+              "nombre": "Computacion",
+              "seccion": "MATUTINO",
+              "ciclos": {
+                "cabecera": {
+                  "dato": {
+                    "id": 4,
+                    "nombre": "Ciclo 2",
+                    "asignaturas": {
+                      "cabecera": {
+                        "dato": {
+                          "id": 4,
+                          "nombreAsignatura": "POO",
+                          "docente": {
+                            "idDocente": 1,
+                            "tituloTercerNivel": "Ingenieria",
+                            "tituloCuartoNivel": "Maestria",
+                            "aniosExpDocente": 4,
+                            "aniosExpLaboral": 8,
+                            "nombres": "Pedro Pablo",
+                            "apellidos": "Camacho Fernandes",
+                            "identificacion": "1120789632",
+                            "direccion": "Avn. Huaynacapa y Los Naranjos",
+                            "telefono": "0998563789",
+                            "ciudad": "Quito",
+                            "fechaNacimiento": "01/01/1990",
+                            "genero": "MASCULINO"
+                          },
+                          "numeroHoras": 158
+                        }
+                      },
+                      "tamanio": 1
+                    }
+                  }
+                },
+                "tamanio": 1
+              }
+            },
+            "siguiente": {
+              "dato": {
+                "id": 6,
+                "nombre": "Computacion",
+                "seccion": "MATUTINO",
+                "ciclos": {
+                  "cabecera": {
+                    "dato": {
+                      "id": 1,
+                      "nombre": "Ciclo 3",
+                      "asignaturas": {
+                        "cabecera": {
+                          "dato": {
+                            "id": 1,
+                            "nombreAsignatura": "Base de Datos",
+                            "docente": {
+                              "idDocente": 1,
+                              "tituloTercerNivel": "Ingenieria",
+                              "tituloCuartoNivel": "Maestria",
+                              "aniosExpDocente": 4,
+                              "aniosExpLaboral": 8,
+                              "nombres": "Pedro Pablo",
+                              "apellidos": "Camacho Fernandes",
+                              "identificacion": "1120986354",
+                              "direccion": "Av. Los Naranjos",
+                              "telefono": "0985623457",
+                              "ciudad": "Quito",
+                              "fechaNacimiento": "15/05/1980",
+                              "genero": "MASCULINO"
+                            },
+                            "numeroHoras": 50
+                          }
+                        },
+                        "tamanio": 1
+                      }
+                    },
+                    "siguiente": {
+                      "dato": {
+                        "id": 6,
+                        "nombre": "Ciclo 3",
+                        "asignaturas": {
+                          "cabecera": {
+                            "dato": {
+                              "id": 6,
+                              "nombreAsignatura": "Estadistica Analitica",
+                              "docente": {
+                                "idDocente": 4,
+                                "tituloTercerNivel": "Ingenieria",
+                                "tituloCuartoNivel": "Maestria",
+                                "aniosExpDocente": 14,
+                                "aniosExpLaboral": 19,
+                                "nombres": "Mario Humberto",
+                                "apellidos": "Camacho Calva",
+                                "identificacion": "0700652068",
+                                "direccion": "24 de noviembre",
+                                "telefono": "0985647782",
+                                "ciudad": "Machala",
+                                "fechaNacimiento": "09/02/1987",
+                                "genero": "MASCULINO"
+                              },
+                              "numeroHoras": 80
+                            }
+                          },
+                          "tamanio": 1
+                        }
+                      }
+                    }
+                  },
+                  "tamanio": 2
+                }
+              },
+              "siguiente": {
+                "dato": {
+                  "id": 7,
+                  "nombre": "Computacion",
+                  "seccion": "MATUTINO",
+                  "ciclos": {
+                    "cabecera": {
+                      "dato": {
+                        "id": 6,
+                        "nombre": "Ciclo 3",
+                        "asignaturas": {
+                          "cabecera": {
+                            "dato": {
+                              "id": 6,
+                              "nombreAsignatura": "Estadistica Analitica",
+                              "docente": {
+                                "idDocente": 4,
+                                "tituloTercerNivel": "Ingenieria",
+                                "tituloCuartoNivel": "Maestria",
+                                "aniosExpDocente": 14,
+                                "aniosExpLaboral": 19,
+                                "nombres": "Mario Humberto",
+                                "apellidos": "Camacho Calva",
+                                "identificacion": "0700652068",
+                                "direccion": "24 de noviembre",
+                                "telefono": "0985647782",
+                                "ciudad": "Machala",
+                                "fechaNacimiento": "09/02/1987",
+                                "genero": "MASCULINO"
+                              },
+                              "numeroHoras": 80
+                            }
+                          },
+                          "tamanio": 1
+                        }
+                      }
+                    },
+                    "tamanio": 1
+                  }
+                },
+                "siguiente": {
+                  "dato": {
+                    "id": 8,
+                    "nombre": "Computacion",
+                    "seccion": "MATUTINO",
+                    "ciclos": {
+                      "cabecera": {
+                        "dato": {
+                          "id": 3,
+                          "nombre": "Ciclo 3",
+                          "asignaturas": {
+                            "cabecera": {
+                              "dato": {
+                                "id": 3,
+                                "nombreAsignatura": "Estructura de Datos",
+                                "docente": {
+                                  "idDocente": 1,
+                                  "tituloTercerNivel": "Ingenieria",
+                                  "tituloCuartoNivel": "Maestria",
+                                  "aniosExpDocente": 4,
+                                  "aniosExpLaboral": 8,
+                                  "nombres": "Pedro Pablo",
+                                  "apellidos": "Camacho Fernandes",
+                                  "identificacion": "1120789632",
+                                  "direccion": "Avn. Huaynacapa y Los Naranjos",
+                                  "telefono": "0998563789",
+                                  "ciudad": "Quito",
+                                  "fechaNacimiento": "01/01/1990",
+                                  "genero": "MASCULINO"
+                                },
+                                "numeroHoras": 100
+                              }
+                            },
+                            "tamanio": 1
+                          }
+                        },
+                        "siguiente": {
+                          "dato": {
+                            "id": 3,
+                            "nombre": "Ciclo 3",
+                            "asignaturas": {
+                              "cabecera": {
+                                "dato": {
+                                  "id": 3,
+                                  "nombreAsignatura": "Estructura de Datos",
+                                  "docente": {
+                                    "idDocente": 1,
+                                    "tituloTercerNivel": "Ingenieria",
+                                    "tituloCuartoNivel": "Maestria",
+                                    "aniosExpDocente": 4,
+                                    "aniosExpLaboral": 8,
+                                    "nombres": "Pedro Pablo",
+                                    "apellidos": "Camacho Fernandes",
+                                    "identificacion": "1120789632",
+                                    "direccion": "Avn. Huaynacapa y Los Naranjos",
+                                    "telefono": "0998563789",
+                                    "ciudad": "Quito",
+                                    "fechaNacimiento": "01/01/1990",
+                                    "genero": "MASCULINO"
+                                  },
+                                  "numeroHoras": 100
+                                }
+                              },
+                              "tamanio": 1
+                            }
+                          }
+                        }
+                      },
+                      "tamanio": 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
-  "tamanio": 2
+  "tamanio": 8
 }

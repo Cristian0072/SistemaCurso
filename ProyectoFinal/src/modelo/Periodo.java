@@ -1,6 +1,6 @@
 package modelo;
 
-import modelo.enums.EspecificacionPeriodo;
+import modelo.enums.Especificacion;
 import modelo.enums.Meses;
 
 /**
@@ -12,7 +12,7 @@ public class Periodo {
     private Integer idPeriodo;
     private Meses mesInicio;
     private Meses mesFin;
-    private EspecificacionPeriodo especificacion;
+    private Especificacion especificacion;
 
     public Periodo() {
 
@@ -42,17 +42,17 @@ public class Periodo {
         this.mesFin = mesFin;
     }
 
-    public EspecificacionPeriodo getEspecificacion() {
+    public Especificacion getEspecificacion() {
         return especificacion;
     }
 
-    public void setEspecificacion(EspecificacionPeriodo especificacion) {
+    public void setEspecificacion(Especificacion especificacion) {
         this.especificacion = especificacion;
     }
 
     @Override
     public String toString() {
-        return "IdPeriodo " + idPeriodo + " mesInicio " + mesInicio + " mesFin " + mesFin + " especificacion " + especificacion;
+        return mesInicio + " - " + mesFin + " :: " + especificacion;
     }
     
 }

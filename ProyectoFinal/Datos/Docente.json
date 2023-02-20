@@ -13,7 +13,8 @@
       "telefono": "0998563789",
       "ciudad": "Quito",
       "fechaNacimiento": "01/01/1990",
-      "genero": "MASCULINO"
+      "genero": "MASCULINO",
+      "correo": "pedro.p.fernandes20@gmail.com"
     },
     "siguiente": {
       "dato": {
@@ -21,22 +22,23 @@
         "tituloTercerNivel": "Ingenieria",
         "tituloCuartoNivel": "Maestria",
         "aniosExpDocente": 8,
-        "aniosExpLaboral": 14,
+        "aniosExpLaboral": 15,
         "nombres": "Jairo Manuel",
         "apellidos": "Escamilla Torres",
         "identificacion": "1150197588",
         "direccion": "Los Laureles",
         "telefono": "0982546395",
         "ciudad": "Guayaquil",
-        "fechaNacimiento": "25/09/1980 - 14:22:48",
-        "genero": "MASCULINO"
+        "fechaNacimiento": "10/01/1982",
+        "genero": "MASCULINO",
+        "correo": "j.manuel15@gmail.com"
       },
       "siguiente": {
         "dato": {
           "idDocente": 3,
           "tituloTercerNivel": "Ingenieria",
           "tituloCuartoNivel": "Maestria",
-          "aniosExpDocente": 8,
+          "aniosExpDocente": 5,
           "aniosExpLaboral": 16,
           "nombres": "Mayra Fernanda",
           "apellidos": "Ramos Riquelme",
@@ -44,8 +46,9 @@
           "direccion": "El Oro",
           "telefono": "0982365411",
           "ciudad": "Machala",
-          "fechaNacimiento": "27/08/1975",
-          "genero": "FEMENINO"
+          "fechaNacimiento": "03/08/1977",
+          "genero": "FEMENINO",
+          "correo": "mayra.f.ramos@gmail.com"
         },
         "siguiente": {
           "dato": {
@@ -60,12 +63,31 @@
             "direccion": "24 de noviembre",
             "telefono": "0985647782",
             "ciudad": "Machala",
-            "fechaNacimiento": "09/02/1987",
-            "genero": "MASCULINO"
+            "fechaNacimiento": "02/09/1987",
+            "genero": "MASCULINO",
+            "correo": "humbertocalva20@gmail.com"
+          },
+          "siguiente": {
+            "dato": {
+              "idDocente": 5,
+              "tituloTercerNivel": "Ingenieria",
+              "tituloCuartoNivel": "Maestria",
+              "aniosExpDocente": 6,
+              "aniosExpLaboral": 13,
+              "nombres": "Karla Romina",
+              "apellidos": "Torres Puglla",
+              "identificacion": "1306173111",
+              "direccion": "9 de Mayo",
+              "telefono": "0985247863",
+              "ciudad": "Olmedo",
+              "fechaNacimiento": "02/04/1982",
+              "genero": "FEMENINO",
+              "correo": "rominatorres203@gmail.com"
+            }
           }
         }
       }
     }
   },
-  "tamanio": 4
+  "tamanio": 5
 }

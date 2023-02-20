@@ -8,7 +8,6 @@
           "dato": {
             "id": 1,
             "nombreAsignatura": "Base de Datos",
-            "paralelo": "A",
             "docente": {
               "idDocente": 1,
               "tituloTercerNivel": "Ingenieria",
@@ -24,7 +23,6 @@
               "fechaNacimiento": "15/05/1980",
               "genero": "MASCULINO"
             },
-            "estadoAsignatura": "APROBADA",
             "numeroHoras": 50
           }
         },
@@ -40,7 +38,6 @@
             "dato": {
               "id": 2,
               "nombreAsignatura": "Disenio de circuitos",
-              "paralelo": "C",
               "docente": {
                 "idDocente": 2,
                 "tituloTercerNivel": "Ingenieria",
@@ -56,7 +53,6 @@
                 "fechaNacimiento": "25/09/1980 - 14:22:48",
                 "genero": "MASCULINO"
               },
-              "estadoAsignatura": "PENDIENTE",
               "numeroHoras": 78
             }
           },
@@ -72,7 +68,6 @@
               "dato": {
                 "id": 3,
                 "nombreAsignatura": "Estructura de Datos",
-                "paralelo": "H",
                 "docente": {
                   "idDocente": 1,
                   "tituloTercerNivel": "Ingenieria",
@@ -88,7 +83,6 @@
                   "fechaNacimiento": "01/01/1990",
                   "genero": "MASCULINO"
                 },
-                "estadoAsignatura": "APROBADA",
                 "numeroHoras": 100
               }
             },
@@ -104,7 +98,6 @@
                 "dato": {
                   "id": 4,
                   "nombreAsignatura": "POO",
-                  "paralelo": "A",
                   "docente": {
                     "idDocente": 1,
                     "tituloTercerNivel": "Ingenieria",
@@ -120,7 +113,6 @@
                     "fechaNacimiento": "01/01/1990",
                     "genero": "MASCULINO"
                   },
-                  "estadoAsignatura": "PENDIENTE",
                   "numeroHoras": 158
                 }
               },
@@ -136,7 +128,6 @@
                   "dato": {
                     "id": 5,
                     "nombreAsignatura": "Matematicas Discretas",
-                    "paralelo": "E",
                     "docente": {
                       "idDocente": 4,
                       "tituloTercerNivel": "Ingenieria",
@@ -152,11 +143,103 @@
                       "fechaNacimiento": "09/02/1987",
                       "genero": "MASCULINO"
                     },
-                    "estadoAsignatura": "PENDIENTE",
                     "numeroHoras": 85
                   }
                 },
                 "tamanio": 1
+              }
+            },
+            "siguiente": {
+              "dato": {
+                "id": 6,
+                "nombre": "Ciclo 3",
+                "asignaturas": {
+                  "cabecera": {
+                    "dato": {
+                      "id": 6,
+                      "nombreAsignatura": "Estadistica Analitica",
+                      "docente": {
+                        "idDocente": 4,
+                        "tituloTercerNivel": "Ingenieria",
+                        "tituloCuartoNivel": "Maestria",
+                        "aniosExpDocente": 14,
+                        "aniosExpLaboral": 19,
+                        "nombres": "Mario Humberto",
+                        "apellidos": "Camacho Calva",
+                        "identificacion": "0700652068",
+                        "direccion": "24 de noviembre",
+                        "telefono": "0985647782",
+                        "ciudad": "Machala",
+                        "fechaNacimiento": "09/02/1987",
+                        "genero": "MASCULINO"
+                      },
+                      "numeroHoras": 80
+                    }
+                  },
+                  "tamanio": 1
+                }
+              },
+              "siguiente": {
+                "dato": {
+                  "id": 7,
+                  "nombre": "Ciclo 2",
+                  "asignaturas": {
+                    "cabecera": {
+                      "dato": {
+                        "id": 7,
+                        "nombreAsignatura": "Emprendimiento y Gestion",
+                        "docente": {
+                          "idDocente": 5,
+                          "tituloTercerNivel": "Ingenieria",
+                          "tituloCuartoNivel": "Maestria",
+                          "aniosExpDocente": 6,
+                          "aniosExpLaboral": 13,
+                          "nombres": "Karla Romina",
+                          "apellidos": "Torres Puglla",
+                          "identificacion": "1306173111",
+                          "direccion": "9 de Mayo",
+                          "telefono": "0985247863",
+                          "ciudad": "Olmedo",
+                          "fechaNacimiento": "28/02/1980",
+                          "genero": "FEMENINO"
+                        },
+                        "numeroHoras": 100
+                      }
+                    },
+                    "tamanio": 1
+                  }
+                },
+                "siguiente": {
+                  "dato": {
+                    "id": 8,
+                    "nombre": "Ciclo 3",
+                    "asignaturas": {
+                      "cabecera": {
+                        "dato": {
+                          "id": 8,
+                          "nombreAsignatura": "Arquitectura de Ordenadores",
+                          "docente": {
+                            "idDocente": 3,
+                            "tituloTercerNivel": "Ingenieria",
+                            "tituloCuartoNivel": "Maestria",
+                            "aniosExpDocente": 5,
+                            "aniosExpLaboral": 16,
+                            "nombres": "Mayra Fernanda",
+                            "apellidos": "Ramos Riquelme",
+                            "identificacion": "0701916173",
+                            "direccion": "El Oro",
+                            "telefono": "0982365411",
+                            "ciudad": "Machala",
+                            "fechaNacimiento": "08/03/1977",
+                            "genero": "FEMENINO"
+                          },
+                          "numeroHoras": 75
+                        }
+                      },
+                      "tamanio": 1
+                    }
+                  }
+                }
               }
             }
           }
@@ -164,5 +247,5 @@
       }
     }
   },
-  "tamanio": 5
+  "tamanio": 8
 }

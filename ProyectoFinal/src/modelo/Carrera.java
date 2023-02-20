@@ -52,7 +52,7 @@ public class Carrera {
 
     @Override
     public String toString() {
-        return "ID " + id + " Nombre: " + nombre + " Seccion: " + seccion + " Ciclos: " + ciclos.toString();
+        return nombre + " " + seccion;
     }
     
 }

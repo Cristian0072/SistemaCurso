@@ -42,7 +42,7 @@ public class Ciclo {
 
     @Override
     public String toString() {
-        return "ID " + id + " nombre " + nombre + " asignaturas " + asignaturas.toString();
+        return nombre + " " + asignaturas.getCabecera().getDato().toString();
     }
 
 }

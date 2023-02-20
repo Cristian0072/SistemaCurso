@@ -18,7 +18,6 @@
                       "dato": {
                         "id": 1,
                         "nombreAsignatura": "Base de Datos",
-                        "paralelo": "A",
                         "docente": {
                           "idDocente": 1,
                           "tituloTercerNivel": "Ingenieria",
@@ -48,7 +47,7 @@
         },
         "tamanio": 1
       },
-      "regimen": "Costa"
+      "regimen": "Costa 2019 - 2020"
     },
     "siguiente": {
       "dato": {
@@ -69,7 +68,6 @@
                         "dato": {
                           "id": 2,
                           "nombreAsignatura": "Disenio de circuitos",
-                          "paralelo": "C",
                           "docente": {
                             "idDocente": 2,
                             "tituloTercerNivel": "Ingenieria",
@@ -99,7 +97,7 @@
           },
           "tamanio": 1
         },
-        "regimen": "Sierra 2022-2023"
+        "regimen": "Sierra 2022 - 2023"
       },
       "siguiente": {
         "dato": {
@@ -120,7 +118,6 @@
                           "dato": {
                             "id": 1,
                             "nombreAsignatura": "Base de Datos",
-                            "paralelo": "A",
                             "docente": {
                               "idDocente": 1,
                               "tituloTercerNivel": "Ingenieria",
@@ -171,7 +168,6 @@
                             "dato": {
                               "id": 2,
                               "nombreAsignatura": "Disenio de circuitos",
-                              "paralelo": "C",
                               "docente": {
                                 "idDocente": 2,
                                 "tituloTercerNivel": "Ingenieria",
@@ -202,10 +198,61 @@
               "tamanio": 1
             },
             "regimen": "Sierra 2021 -  2022"
+          },
+          "siguiente": {
+            "dato": {
+              "id": 5,
+              "carreras": {
+                "cabecera": {
+                  "dato": {
+                    "id": 3,
+                    "nombre": "Electromecanica",
+                    "seccion": "VESPERTINO",
+                    "ciclos": {
+                      "cabecera": {
+                        "dato": {
+                          "id": 5,
+                          "nombre": "Ciclo 1",
+                          "asignaturas": {
+                            "cabecera": {
+                              "dato": {
+                                "id": 5,
+                                "nombreAsignatura": "Matematicas Discretas",
+                                "docente": {
+                                  "idDocente": 4,
+                                  "tituloTercerNivel": "Ingenieria",
+                                  "tituloCuartoNivel": "Maestria",
+                                  "aniosExpDocente": 14,
+                                  "aniosExpLaboral": 19,
+                                  "nombres": "Mario Humberto",
+                                  "apellidos": "Camacho Calva",
+                                  "identificacion": "0700652068",
+                                  "direccion": "24 de noviembre",
+                                  "telefono": "0985647782",
+                                  "ciudad": "Machala",
+                                  "fechaNacimiento": "09/02/1987",
+                                  "genero": "MASCULINO"
+                                },
+                                "estadoAsignatura": "PENDIENTE",
+                                "numeroHoras": 85
+                              }
+                            },
+                            "tamanio": 1
+                          }
+                        }
+                      },
+                      "tamanio": 1
+                    }
+                  }
+                },
+                "tamanio": 1
+              },
+              "regimen": "Costa 2023 - 2024"
+            }
           }
         }
       }
     }
   },
-  "tamanio": 4
+  "tamanio": 5
 }

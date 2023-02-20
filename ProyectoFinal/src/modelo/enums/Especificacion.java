@@ -4,6 +4,6 @@ package modelo.enums;
  *
  * @author SONY VAIO
  */
-public enum EspecificacionPeriodo {
+public enum Especificacion {
     SEMESTRE, CUATRIMESTRE, TRIMESTRE, BIMESTRE
 }

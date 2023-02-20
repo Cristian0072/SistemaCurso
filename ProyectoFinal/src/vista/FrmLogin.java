@@ -21,7 +21,7 @@ public class FrmLogin extends javax.swing.JDialog {
         if (txtUsuario.getText().trim().isEmpty() || new String(txtClave.getPassword()).trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Campos vacios", "AVISO", JOptionPane.WARNING_MESSAGE);
         } else if (txtUsuario.getText().trim().equals(cuenta[0]) && new String(txtClave.getPassword()).trim().equals(cuenta[1])) {
-            JOptionPane.showMessageDialog(null, "BIENVENIDO", "OK", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "BIENVENIDO ADMIN ;-)", "OK", JOptionPane.INFORMATION_MESSAGE);
             new FrmRegistro().setVisible(true);
             setVisible(false);
         } else if (!txtUsuario.getText().trim().equals(cuenta[0])) {
@@ -47,6 +47,7 @@ public class FrmLogin extends javax.swing.JDialog {
         btnIngresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("LOGIN");
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

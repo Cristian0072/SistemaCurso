@@ -86,6 +86,30 @@
                       "mesFin": "ENERO",
                       "especificacion": "CUATRIMESTRE"
                     }
+                  },
+                  "siguiente": {
+                    "dato": {
+                      "idMatricula": 9,
+                      "fechaEmision": "16/02/2023 - 18:38:16",
+                      "periodo": {
+                        "idPeriodo": 8,
+                        "mesInicio": "ENERO",
+                        "mesFin": "AGOSTO",
+                        "especificacion": "CUATRIMESTRE"
+                      }
+                    },
+                    "siguiente": {
+                      "dato": {
+                        "idMatricula": 10,
+                        "fechaEmision": "19/02/2023 - 20:51:08",
+                        "periodo": {
+                          "idPeriodo": 7,
+                          "mesInicio": "FEBRERO",
+                          "mesFin": "SEPTIEMBRE",
+                          "especificacion": "BIMESTRE"
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -95,5 +119,5 @@
       }
     }
   },
-  "tamanio": 8
+  "tamanio": 10
 }

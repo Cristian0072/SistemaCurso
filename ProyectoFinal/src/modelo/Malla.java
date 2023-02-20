@@ -41,7 +41,7 @@ public class Malla {
 
     @Override
     public String toString() {
-        return "Id " + id + " carreras " + carreras.toString() + " regimen " + regimen;
+        return carreras.getCabecera().getDato().toString() + " " + regimen;
     }
 
 }

@@ -55,7 +55,7 @@ public class Docente extends Persona {
 
     @Override
     public String toString() {
-        return "IdDocente " + idDocente + " tituloTercerNivel " + tituloTercerNivel + " tituloCuartoNivel " + tituloCuartoNivel + " aniosExpDocente " + aniosExpDocente + " aniosExpLaboral " + aniosExpLaboral;
+        return getNombres()+" "+getApellidos()+" "+getIdentificacion()+ " " + tituloTercerNivel + " " + tituloCuartoNivel + " " + aniosExpDocente + " " + aniosExpLaboral;
     }
     
     

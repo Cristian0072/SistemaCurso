@@ -21,9 +21,9 @@ import modelo.Ciclo;
 import modelo.Docente;
 import modelo.Matricula;
 import modelo.Periodo;
-import modelo.enums.EspecificacionPeriodo;
+import modelo.enums.Especificacion;
 import modelo.enums.Estado;
-import modelo.enums.Generos;
+import modelo.enums.Genero;
 import modelo.enums.Meses;
 import modelo.enums.Seccion;
 
@@ -35,7 +35,7 @@ public class Utilidades {
 
     public static void cargarComboGenero(JComboBox cbx) {
         cbx.removeAllItems();
-        for (Generos genero : Generos.values()) {
+        for (Genero genero : Genero.values()) {
             cbx.addItem(genero);
         }
     }
@@ -168,24 +168,24 @@ public class Utilidades {
 
     public static void cargarGeneros(JComboBox cbx) {
         cbx.removeAllItems();
-        for (Generos genero : Generos.values()) {
+        for (Genero genero : Genero.values()) {
             cbx.addItem(genero);
         }
     }
 
-    public static Generos obtenerGenero(JComboBox cbx) {
-        return (Generos) cbx.getSelectedItem();
+    public static Genero obtenerGenero(JComboBox cbx) {
+        return (Genero) cbx.getSelectedItem();
     }
 
     public static void cargarEspecificaciones(JComboBox cbx) {
         cbx.removeAllItems();
-        for (EspecificacionPeriodo especificacion : EspecificacionPeriodo.values()) {
+        for (Especificacion especificacion : Especificacion.values()) {
             cbx.addItem(especificacion);
         }
     }
 
-    public static EspecificacionPeriodo obtenerEspecificacion(JComboBox cbx) {
-        return (EspecificacionPeriodo) cbx.getSelectedItem();
+    public static Especificacion obtenerEspecificacion(JComboBox cbx) {
+        return (Especificacion) cbx.getSelectedItem();
     }
 
     public static void cargarPeriodos(JComboBox cbx) {
@@ -212,6 +212,7 @@ public class Utilidades {
         }
     }
 //Método para validar una cédula Ecuatoriana
+
     public static Boolean esCedulaValida(String cedula) {
         if (cedula.length() != 10) {
             return false;

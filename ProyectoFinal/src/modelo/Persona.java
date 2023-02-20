@@ -1,6 +1,6 @@
 package modelo;
 
-import modelo.enums.Generos;
+import modelo.enums.Genero;
 
 /**
  *
@@ -15,12 +15,21 @@ public class Persona {
     private String telefono;
     private String ciudad;
     private String fechaNacimiento;
-    private Generos genero;
+    private Genero genero;
+    private String correo;
 
-    public Persona() {
+     public Persona() {
 
     }
 
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+    
     public String getNombres() {
         return nombres;
     }
@@ -77,11 +86,11 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public Generos getGenero() {
+    public Genero getGenero() {
         return genero;
     }
 
-    public void setGenero(Generos genero) {
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
 

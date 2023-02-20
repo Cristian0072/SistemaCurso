@@ -7,6 +7,7 @@ import controlador.listas.excepciones.TamanioNoEncontradaException;
 import controlador.utilidades.Utilidades;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  *
@@ -175,7 +176,7 @@ public class ListaEnlazada<E> {
         tamanio = 0;
     }
 
-    public ListaEnlazada<E> quickSort(ListaEnlazada<E> lista, String atributo) throws PosicionNoEncontradaException, IllegalArgumentException, IllegalAccessException, AtributoException {
+    public ListaEnlazada<E> quickSort(ListaEnlazada<E> lista, String atributo) throws PosicionNoEncontradaException, IllegalArgumentException, IllegalAccessException, AtributoException, NoSuchMethodException, InvocationTargetException {
         if (lista.getTamanio() > 1) {
             E[] arreglo = lista.toArray();
             quickSort(arreglo, 0, arreglo.length - 1, atributo);
@@ -184,31 +185,23 @@ public class ListaEnlazada<E> {
         return lista;
     }
 
-    private void quickSort(E[] arreglo, int inicio, int fin, String atributo) throws AtributoException, IllegalArgumentException, IllegalAccessException {
+    private void quickSort(E[] arreglo, int inicio, int fin, String atributo) throws AtributoException, IllegalArgumentException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         if (inicio < fin) {
             E pivote = arreglo[(inicio + fin) / 2];
             int i = inicio;
             int j = fin;
             Field field = Utilidades.obtenerAtributo(pivote.getClass(), atributo);
-            field.setAccessible(true);
             if (field == null) {
                 throw new AtributoException();
             }
+            field.setAccessible(true);
             Object elemento = field.get(pivote);
             while (i <= j) {
-                while (i <= j) {
-                    Object elemento1 = field.get(arreglo[i]);
-                    if (compararDatos(elemento1, elemento)) {
-                        i++;
-                    }
-                    break;
+                while (compararDatos(field.get(arreglo[i]), elemento)) {
+                    i++;
                 }
-                while (i <= j) {
-                    Object elemento1 = field.get(arreglo[j]);
-                    if (compararDatos(elemento, elemento1)) {
-                        j--;
-                    }
-                    break;
+                while (compararDatos(elemento, field.get(arreglo[j]))) {
+                    j--;
                 }
                 if (i <= j) {
                     E aux = arreglo[i];
@@ -218,6 +211,7 @@ public class ListaEnlazada<E> {
                     j--;
                 }
             }
+
             if (inicio < j) {
                 quickSort(arreglo, inicio, j, atributo);
             }

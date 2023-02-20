@@ -11,11 +11,14 @@ public class Utilidades {
 
     public static Field obtenerAtributo(Class clase, String nombre) {
         Field atributo = null;
-        for (Field aux : clase.getDeclaredFields()) {
-            if (nombre.equalsIgnoreCase(aux.getName())) {
-                atributo = aux;
-                break;
+        while (clase != null && atributo == null) {
+            for (Field aux : clase.getDeclaredFields()) {
+                if (nombre.equalsIgnoreCase(aux.getName())) {
+                    atributo = aux;
+                    break;
+                }
             }
+            clase = clase.getSuperclass();
         }
         return atributo;
     }

@@ -3,19 +3,18 @@
     "dato": {
       "idAlumno": 1,
       "matricula": {
-        "idMatricula": 3,
-        "fechaEmision": "06/02/2023 - 14:30:42",
+        "idMatricula": 1,
+        "fechaEmision": "02/02/2023 - 18:48:03",
         "periodo": {
-          "idPeriodo": 7,
-          "mesInicio": "FEBRERO",
-          "mesFin": "SEPTIEMBRE",
-          "especificacion": "BIMESTRE"
+          "idPeriodo": 1,
+          "mesInicio": "MAYO",
+          "mesFin": "ENERO",
+          "especificacion": "TRIMESTRE"
         }
       },
       "asignatura": {
-        "id": 3,
-        "nombreAsignatura": "Estructura de Datos",
-        "paralelo": "H",
+        "id": 1,
+        "nombreAsignatura": "Base de Datos",
         "docente": {
           "idDocente": 1,
           "tituloTercerNivel": "Ingenieria",
@@ -24,16 +23,17 @@
           "aniosExpLaboral": 8,
           "nombres": "Pedro Pablo",
           "apellidos": "Camacho Fernandes",
-          "identificacion": "1120789632",
-          "direccion": "Avn. Huaynacapa y Los Naranjos",
-          "telefono": "0998563789",
+          "identificacion": "1120986354",
+          "direccion": "Av. Los Naranjos",
+          "telefono": "0985623457",
           "ciudad": "Quito",
-          "fechaNacimiento": "01/01/1990",
+          "fechaNacimiento": "15/05/1980",
           "genero": "MASCULINO"
         },
-        "estadoAsignatura": "APROBADA",
-        "numeroHoras": 100
+        "numeroHoras": 50
       },
+      "paralelo": "A",
+      "estado": "PENDIENTE",
       "nombres": "Luis Mario",
       "apellidos": "Gutierrez Suarez",
       "identificacion": "9999999999",
@@ -41,87 +41,89 @@
       "telefono": "0986523457",
       "ciudad": "Loja",
       "fechaNacimiento": "02/05/2000",
-      "genero": "MASCULINO"
+      "genero": "MASCULINO",
+      "correo": "marioluis@gmail.com"
     },
     "siguiente": {
       "dato": {
         "idAlumno": 2,
         "matricula": {
-          "idMatricula": 1,
-          "fechaEmision": "02/02/2023 - 18:48:03",
+          "idMatricula": 5,
+          "fechaEmision": "07/02/2023 - 21:01:12",
           "periodo": {
-            "idPeriodo": 1,
-            "mesInicio": "MAYO",
-            "mesFin": "ENERO",
-            "especificacion": "TRIMESTRE"
+            "idPeriodo": 4,
+            "mesInicio": "ENERO",
+            "mesFin": "NOVIEMBRE",
+            "especificacion": "BIMESTRE"
           }
         },
         "asignatura": {
-          "id": 1,
-          "nombreAsignatura": "Base de Datos",
-          "paralelo": "A",
+          "id": 2,
+          "nombreAsignatura": "Disenio de circuitos",
           "docente": {
-            "idDocente": 1,
+            "idDocente": 2,
             "tituloTercerNivel": "Ingenieria",
             "tituloCuartoNivel": "Maestria",
-            "aniosExpDocente": 4,
-            "aniosExpLaboral": 8,
-            "nombres": "Pedro Pablo",
-            "apellidos": "Camacho Fernandes",
-            "identificacion": "1120986354",
-            "direccion": "Av. Los Naranjos",
-            "telefono": "0985623457",
-            "ciudad": "Quito",
-            "fechaNacimiento": "15/05/1980",
+            "aniosExpDocente": 8,
+            "aniosExpLaboral": 14,
+            "nombres": "Jairo Manuel",
+            "apellidos": "Escamilla Torres",
+            "identificacion": "1150197588",
+            "direccion": "Los Laureles",
+            "telefono": "0982546395",
+            "ciudad": "Guayaquil",
+            "fechaNacimiento": "25/09/1980 - 14:22:48",
             "genero": "MASCULINO"
           },
-          "estadoAsignatura": "APROBADA",
-          "numeroHoras": 50
+          "numeroHoras": 78
         },
+        "paralelo": "B",
+        "estado": "PENDIENTE",
         "nombres": "Carlos Patricio",
         "apellidos": "Machado Avila",
         "identificacion": "1102024104",
         "direccion": "Jipiro",
         "telefono": "0952368741",
         "ciudad": "Loja",
-        "fechaNacimiento": "09/03/2000",
-        "genero": "MASCULINO"
+        "fechaNacimiento": "03/09/2000",
+        "genero": "MASCULINO",
+        "correo": "machadopatricio14@gmail.com"
       },
       "siguiente": {
         "dato": {
           "idAlumno": 3,
           "matricula": {
-            "idMatricula": 4,
-            "fechaEmision": "07/02/2023 - 21:01:04",
+            "idMatricula": 3,
+            "fechaEmision": "06/02/2023 - 14:30:42",
             "periodo": {
-              "idPeriodo": 3,
-              "mesInicio": "ENERO",
-              "mesFin": "AGOSTO",
-              "especificacion": "CUATRIMESTRE"
+              "idPeriodo": 7,
+              "mesInicio": "FEBRERO",
+              "mesFin": "SEPTIEMBRE",
+              "especificacion": "BIMESTRE"
             }
           },
           "asignatura": {
-            "id": 4,
-            "nombreAsignatura": "POO",
-            "paralelo": "A",
+            "id": 5,
+            "nombreAsignatura": "Matematicas Discretas",
             "docente": {
-              "idDocente": 1,
+              "idDocente": 4,
               "tituloTercerNivel": "Ingenieria",
               "tituloCuartoNivel": "Maestria",
-              "aniosExpDocente": 4,
-              "aniosExpLaboral": 8,
-              "nombres": "Pedro Pablo",
-              "apellidos": "Camacho Fernandes",
-              "identificacion": "1120789632",
-              "direccion": "Avn. Huaynacapa y Los Naranjos",
-              "telefono": "0998563789",
-              "ciudad": "Quito",
-              "fechaNacimiento": "01/01/1990",
+              "aniosExpDocente": 14,
+              "aniosExpLaboral": 19,
+              "nombres": "Mario Humberto",
+              "apellidos": "Camacho Calva",
+              "identificacion": "0700652068",
+              "direccion": "24 de noviembre",
+              "telefono": "0985647782",
+              "ciudad": "Machala",
+              "fechaNacimiento": "09/02/1987",
               "genero": "MASCULINO"
             },
-            "estadoAsignatura": "PENDIENTE",
-            "numeroHoras": 158
+            "numeroHoras": 85
           },
+          "paralelo": "H",
+          "estado": "APROBADA",
           "nombres": "Pedro Pablo",
           "apellidos": "Morales Garnica",
           "identificacion": "0102789567",
@@ -135,37 +137,37 @@
           "dato": {
             "idAlumno": 4,
             "matricula": {
-              "idMatricula": 8,
-              "fechaEmision": "12/02/2023 - 18:39:20",
+              "idMatricula": 1,
+              "fechaEmision": "02/02/2023 - 18:48:03",
               "periodo": {
-                "idPeriodo": 6,
+                "idPeriodo": 1,
                 "mesInicio": "MAYO",
                 "mesFin": "ENERO",
-                "especificacion": "CUATRIMESTRE"
+                "especificacion": "TRIMESTRE"
               }
             },
             "asignatura": {
-              "id": 5,
-              "nombreAsignatura": "Matematicas Discretas",
-              "paralelo": "E",
+              "id": 1,
+              "nombreAsignatura": "Base de Datos",
               "docente": {
-                "idDocente": 4,
+                "idDocente": 1,
                 "tituloTercerNivel": "Ingenieria",
                 "tituloCuartoNivel": "Maestria",
-                "aniosExpDocente": 14,
-                "aniosExpLaboral": 19,
-                "nombres": "Mario Humberto",
-                "apellidos": "Camacho Calva",
-                "identificacion": "0700652068",
-                "direccion": "24 de noviembre",
-                "telefono": "0985647782",
-                "ciudad": "Machala",
-                "fechaNacimiento": "09/02/1987",
+                "aniosExpDocente": 4,
+                "aniosExpLaboral": 8,
+                "nombres": "Pedro Pablo",
+                "apellidos": "Camacho Fernandes",
+                "identificacion": "1120986354",
+                "direccion": "Av. Los Naranjos",
+                "telefono": "0985623457",
+                "ciudad": "Quito",
+                "fechaNacimiento": "15/05/1980",
                 "genero": "MASCULINO"
               },
-              "estadoAsignatura": "PENDIENTE",
-              "numeroHoras": 85
+              "numeroHoras": 50
             },
+            "paralelo": "A",
+            "estado": "REPROBADA",
             "nombres": "Favio Stiven",
             "apellidos": "Contento Morocho",
             "identificacion": "1304162983",
@@ -173,7 +175,8 @@
             "telefono": "0952663255",
             "ciudad": "Manabi",
             "fechaNacimiento": "02/02/2001",
-            "genero": "MASCULINO"
+            "genero": "MASCULINO",
+            "correo": "stivenMorocho@gmail.com"
           },
           "siguiente": {
             "dato": {
@@ -189,40 +192,176 @@
                 }
               },
               "asignatura": {
-                "id": 2,
-                "nombreAsignatura": "Disenio de circuitos",
-                "paralelo": "C",
+                "id": 8,
+                "nombreAsignatura": "Arquitectura de Ordenadores",
                 "docente": {
-                  "idDocente": 2,
+                  "idDocente": 3,
                   "tituloTercerNivel": "Ingenieria",
                   "tituloCuartoNivel": "Maestria",
-                  "aniosExpDocente": 8,
-                  "aniosExpLaboral": 14,
-                  "nombres": "Jairo Manuel",
-                  "apellidos": "Escamilla Torres",
-                  "identificacion": "1150197588",
-                  "direccion": "Los Laureles",
-                  "telefono": "0982546395",
-                  "ciudad": "Guayaquil",
-                  "fechaNacimiento": "25/09/1980 - 14:22:48",
-                  "genero": "MASCULINO"
+                  "aniosExpDocente": 5,
+                  "aniosExpLaboral": 16,
+                  "nombres": "Mayra Fernanda",
+                  "apellidos": "Ramos Riquelme",
+                  "identificacion": "0701916173",
+                  "direccion": "El Oro",
+                  "telefono": "0982365411",
+                  "ciudad": "Machala",
+                  "fechaNacimiento": "08/03/1977",
+                  "genero": "FEMENINO"
                 },
-                "estadoAsignatura": "PENDIENTE",
-                "numeroHoras": 78
+                "numeroHoras": 75
               },
+              "paralelo": "C",
+              "estado": "APROBADA",
               "nombres": "Marta Paula",
               "apellidos": "Lopez Guzman",
               "identificacion": "0912467230",
               "direccion": "Avn. Metropolitana",
               "telefono": "0955102678",
               "ciudad": "Guayaquil",
-              "fechaNacimiento": "26/09/2000",
+              "fechaNacimiento": "02/09/2002",
               "genero": "FEMENINO"
+            },
+            "siguiente": {
+              "dato": {
+                "idAlumno": 6,
+                "matricula": {
+                  "idMatricula": 9,
+                  "fechaEmision": "16/02/2023 - 18:38:16",
+                  "periodo": {
+                    "idPeriodo": 8,
+                    "mesInicio": "ENERO",
+                    "mesFin": "AGOSTO",
+                    "especificacion": "CUATRIMESTRE"
+                  }
+                },
+                "asignatura": {
+                  "id": 4,
+                  "nombreAsignatura": "POO",
+                  "docente": {
+                    "idDocente": 1,
+                    "tituloTercerNivel": "Ingenieria",
+                    "tituloCuartoNivel": "Maestria",
+                    "aniosExpDocente": 4,
+                    "aniosExpLaboral": 8,
+                    "nombres": "Pedro Pablo",
+                    "apellidos": "Camacho Fernandes",
+                    "identificacion": "1120789632",
+                    "direccion": "Avn. Huaynacapa y Los Naranjos",
+                    "telefono": "0998563789",
+                    "ciudad": "Quito",
+                    "fechaNacimiento": "01/01/1990",
+                    "genero": "MASCULINO"
+                  },
+                  "numeroHoras": 158
+                },
+                "paralelo": "H",
+                "estado": "PENDIENTE",
+                "nombres": "Fanny Paola",
+                "apellidos": "Gutierrez Maldonado",
+                "identificacion": "1304162983",
+                "direccion": "Pedernales",
+                "telefono": "0985632147",
+                "ciudad": "Manabi",
+                "fechaNacimiento": "02/01/2005",
+                "genero": "FEMENINO",
+                "correo": "fannymaldonado11@gmail.com"
+              },
+              "siguiente": {
+                "dato": {
+                  "idAlumno": 7,
+                  "matricula": {
+                    "idMatricula": 8,
+                    "fechaEmision": "12/02/2023 - 18:39:20",
+                    "periodo": {
+                      "idPeriodo": 6,
+                      "mesInicio": "MAYO",
+                      "mesFin": "ENERO",
+                      "especificacion": "CUATRIMESTRE"
+                    }
+                  },
+                  "asignatura": {
+                    "id": 4,
+                    "nombreAsignatura": "POO",
+                    "docente": {
+                      "idDocente": 1,
+                      "tituloTercerNivel": "Ingenieria",
+                      "tituloCuartoNivel": "Maestria",
+                      "aniosExpDocente": 4,
+                      "aniosExpLaboral": 8,
+                      "nombres": "Pedro Pablo",
+                      "apellidos": "Camacho Fernandes",
+                      "identificacion": "1120789632",
+                      "direccion": "Avn. Huaynacapa y Los Naranjos",
+                      "telefono": "0998563789",
+                      "ciudad": "Quito",
+                      "fechaNacimiento": "01/01/1990",
+                      "genero": "MASCULINO"
+                    },
+                    "numeroHoras": 158
+                  },
+                  "paralelo": "D",
+                  "estado": "PENDIENTE",
+                  "nombres": "Alfredo Santiago",
+                  "apellidos": "Chimbo Guaman",
+                  "identificacion": "1306173111",
+                  "direccion": "Olmedo y 9 de Octubre",
+                  "telefono": "0982564720",
+                  "ciudad": "Portoviejo",
+                  "fechaNacimiento": "03/08/2004",
+                  "genero": "MASCULINO"
+                },
+                "siguiente": {
+                  "dato": {
+                    "idAlumno": 8,
+                    "matricula": {
+                      "idMatricula": 7,
+                      "fechaEmision": "07/02/2023 - 21:01:41",
+                      "periodo": {
+                        "idPeriodo": 2,
+                        "mesInicio": "FEBRERO",
+                        "mesFin": "AGOSTO",
+                        "especificacion": "BIMESTRE"
+                      }
+                    },
+                    "asignatura": {
+                      "id": 8,
+                      "nombreAsignatura": "Arquitectura de Ordenadores",
+                      "docente": {
+                        "idDocente": 3,
+                        "tituloTercerNivel": "Ingenieria",
+                        "tituloCuartoNivel": "Maestria",
+                        "aniosExpDocente": 5,
+                        "aniosExpLaboral": 16,
+                        "nombres": "Mayra Fernanda",
+                        "apellidos": "Ramos Riquelme",
+                        "identificacion": "0701916173",
+                        "direccion": "El Oro",
+                        "telefono": "0982365411",
+                        "ciudad": "Machala",
+                        "fechaNacimiento": "08/03/1977",
+                        "genero": "FEMENINO"
+                      },
+                      "numeroHoras": 75
+                    },
+                    "paralelo": "L",
+                    "estado": "PENDIENTE",
+                    "nombres": "Carlos Humberto",
+                    "apellidos": "Yepez Namicela",
+                    "identificacion": "0701226227",
+                    "direccion": "Balao",
+                    "telefono": "0935247632",
+                    "ciudad": "Guayaquil",
+                    "fechaNacimiento": "01/02/2000",
+                    "genero": "MASCULINO"
+                  }
+                }
+              }
             }
           }
         }
       }
     }
   },
-  "tamanio": 5
+  "tamanio": 8
 }
